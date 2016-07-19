@@ -37,17 +37,17 @@
 
 /* Begin PBXFileReference section */
 		511E674D1D3E5F5200178D28 /* SignUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
-		514D43521D3CD93300218F9B /* Tich.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tich.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		514D43521D3CD93300218F9B /* Titch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Titch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		514D43551D3CD93300218F9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		514D43571D3CD93300218F9B /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		514D435A1D3CD93300218F9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		514D435C1D3CD93300218F9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		514D435F1D3CD93300218F9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		514D43611D3CD93300218F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		514D43661D3CD93300218F9B /* TichTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TichTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		514D43661D3CD93300218F9B /* Titch.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Titch.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		514D436A1D3CD93300218F9B /* TichTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TichTests.swift; sourceTree = "<group>"; };
 		514D436C1D3CD93300218F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		514D43711D3CD93300218F9B /* TichUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TichUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		514D43711D3CD93300218F9B /* Titch.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Titch.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		514D43751D3CD93300218F9B /* TichUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TichUITests.swift; sourceTree = "<group>"; };
 		514D43771D3CD93300218F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91CE416A3698D94B6A2FD95E /* Pods-Tich.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tich.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tich/Pods-Tich.debug.xcconfig"; sourceTree = "<group>"; };
@@ -114,9 +114,9 @@
 		514D43531D3CD93300218F9B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				514D43521D3CD93300218F9B /* Tich.app */,
-				514D43661D3CD93300218F9B /* TichTests.xctest */,
-				514D43711D3CD93300218F9B /* TichUITests.xctest */,
+				514D43521D3CD93300218F9B /* Titch.app */,
+				514D43661D3CD93300218F9B /* Titch.xctest */,
+				514D43711D3CD93300218F9B /* Titch.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -163,9 +163,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		514D43511D3CD93300218F9B /* Tich */ = {
+		514D43511D3CD93300218F9B /* Titch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 514D437A1D3CD93300218F9B /* Build configuration list for PBXNativeTarget "Tich" */;
+			buildConfigurationList = 514D437A1D3CD93300218F9B /* Build configuration list for PBXNativeTarget "Titch" */;
 			buildPhases = (
 				1BE7DA3A10FE335730558CC0 /* [CP] Check Pods Manifest.lock */,
 				514D434E1D3CD93300218F9B /* Sources */,
@@ -178,14 +178,14 @@
 			);
 			dependencies = (
 			);
-			name = Tich;
+			name = Titch;
 			productName = Tich;
-			productReference = 514D43521D3CD93300218F9B /* Tich.app */;
+			productReference = 514D43521D3CD93300218F9B /* Titch.app */;
 			productType = "com.apple.product-type.application";
 		};
-		514D43651D3CD93300218F9B /* TichTests */ = {
+		514D43651D3CD93300218F9B /* TitchTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 514D437D1D3CD93300218F9B /* Build configuration list for PBXNativeTarget "TichTests" */;
+			buildConfigurationList = 514D437D1D3CD93300218F9B /* Build configuration list for PBXNativeTarget "TitchTests" */;
 			buildPhases = (
 				514D43621D3CD93300218F9B /* Sources */,
 				514D43631D3CD93300218F9B /* Frameworks */,
@@ -196,14 +196,14 @@
 			dependencies = (
 				514D43681D3CD93300218F9B /* PBXTargetDependency */,
 			);
-			name = TichTests;
+			name = TitchTests;
 			productName = TichTests;
-			productReference = 514D43661D3CD93300218F9B /* TichTests.xctest */;
+			productReference = 514D43661D3CD93300218F9B /* Titch.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		514D43701D3CD93300218F9B /* TichUITests */ = {
+		514D43701D3CD93300218F9B /* TitchUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 514D43801D3CD93300218F9B /* Build configuration list for PBXNativeTarget "TichUITests" */;
+			buildConfigurationList = 514D43801D3CD93300218F9B /* Build configuration list for PBXNativeTarget "TitchUITests" */;
 			buildPhases = (
 				514D436D1D3CD93300218F9B /* Sources */,
 				514D436E1D3CD93300218F9B /* Frameworks */,
@@ -214,9 +214,9 @@
 			dependencies = (
 				514D43731D3CD93300218F9B /* PBXTargetDependency */,
 			);
-			name = TichUITests;
+			name = TitchUITests;
 			productName = TichUITests;
-			productReference = 514D43711D3CD93300218F9B /* TichUITests.xctest */;
+			productReference = 514D43711D3CD93300218F9B /* Titch.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -242,7 +242,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 514D434D1D3CD93300218F9B /* Build configuration list for PBXProject "Tich" */;
+			buildConfigurationList = 514D434D1D3CD93300218F9B /* Build configuration list for PBXProject "Titch" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -255,9 +255,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				514D43511D3CD93300218F9B /* Tich */,
-				514D43651D3CD93300218F9B /* TichTests */,
-				514D43701D3CD93300218F9B /* TichUITests */,
+				514D43511D3CD93300218F9B /* Titch */,
+				514D43651D3CD93300218F9B /* TitchTests */,
+				514D43701D3CD93300218F9B /* TitchUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -369,12 +369,12 @@
 /* Begin PBXTargetDependency section */
 		514D43681D3CD93300218F9B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 514D43511D3CD93300218F9B /* Tich */;
+			target = 514D43511D3CD93300218F9B /* Titch */;
 			targetProxy = 514D43671D3CD93300218F9B /* PBXContainerItemProxy */;
 		};
 		514D43731D3CD93300218F9B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 514D43511D3CD93300218F9B /* Tich */;
+			target = 514D43511D3CD93300218F9B /* Titch */;
 			targetProxy = 514D43721D3CD93300218F9B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -491,8 +491,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Tich/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.etna.Tich;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.etna.Titch;
+				PRODUCT_NAME = Titch;
 			};
 			name = Debug;
 		};
@@ -503,8 +503,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Tich/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.etna.Tich;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.etna.Titch;
+				PRODUCT_NAME = Titch;
 			};
 			name = Release;
 		};
@@ -515,8 +515,8 @@
 				INFOPLIST_FILE = TichTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.etna.TichTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tich.app/Tich";
+				PRODUCT_NAME = Titch;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Titch.app/Titch";
 			};
 			name = Debug;
 		};
@@ -527,8 +527,8 @@
 				INFOPLIST_FILE = TichTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.etna.TichTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tich.app/Tich";
+				PRODUCT_NAME = Titch;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Titch.app/Titch";
 			};
 			name = Release;
 		};
@@ -538,7 +538,7 @@
 				INFOPLIST_FILE = TichUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.etna.TichUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Titch;
 				TEST_TARGET_NAME = Tich;
 			};
 			name = Debug;
@@ -549,7 +549,7 @@
 				INFOPLIST_FILE = TichUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.etna.TichUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Titch;
 				TEST_TARGET_NAME = Tich;
 			};
 			name = Release;
@@ -557,7 +557,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		514D434D1D3CD93300218F9B /* Build configuration list for PBXProject "Tich" */ = {
+		514D434D1D3CD93300218F9B /* Build configuration list for PBXProject "Titch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				514D43781D3CD93300218F9B /* Debug */,
@@ -566,7 +566,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		514D437A1D3CD93300218F9B /* Build configuration list for PBXNativeTarget "Tich" */ = {
+		514D437A1D3CD93300218F9B /* Build configuration list for PBXNativeTarget "Titch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				514D437B1D3CD93300218F9B /* Debug */,
@@ -575,7 +575,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		514D437D1D3CD93300218F9B /* Build configuration list for PBXNativeTarget "TichTests" */ = {
+		514D437D1D3CD93300218F9B /* Build configuration list for PBXNativeTarget "TitchTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				514D437E1D3CD93300218F9B /* Debug */,
@@ -584,7 +584,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		514D43801D3CD93300218F9B /* Build configuration list for PBXNativeTarget "TichUITests" */ = {
+		514D43801D3CD93300218F9B /* Build configuration list for PBXNativeTarget "TitchUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				514D43811D3CD93300218F9B /* Debug */,
