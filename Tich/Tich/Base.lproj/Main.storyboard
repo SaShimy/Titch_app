@@ -8,7 +8,7 @@
         <!--Login Controller-->
         <scene sceneID="j2I-Jm-g9k">
             <objects>
-                <viewController id="f0e-X7-12D" customClass="LoginController" customModule="Tich" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="f0e-X7-12D" customClass="LoginController" customModule="Titch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uV4-6i-ISo"/>
                         <viewControllerLayoutGuide type="bottom" id="naL-BI-bb7"/>
@@ -121,7 +121,7 @@
         <!--Sign Up Controller-->
         <scene sceneID="qwX-pX-yVt">
             <objects>
-                <viewController storyboardIdentifier="SignUp" id="CrT-Aj-ybh" customClass="SignUpController" customModule="Tich" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUp" id="CrT-Aj-ybh" customClass="SignUpController" customModule="Titch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QlM-Z5-u35"/>
                         <viewControllerLayoutGuide type="bottom" id="Ynp-Gq-5cR"/>
