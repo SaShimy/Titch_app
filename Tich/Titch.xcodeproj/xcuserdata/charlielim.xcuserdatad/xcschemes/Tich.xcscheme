@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "514D43511D3CD93300218F9B"
-               BuildableName = "Tich.app"
-               BlueprintName = "Tich"
-               ReferencedContainer = "container:Tich.xcodeproj">
+               BuildableName = "Titch.app"
+               BlueprintName = "Titch"
+               ReferencedContainer = "container:Titch.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "514D43651D3CD93300218F9B"
-               BuildableName = "TichTests.xctest"
-               BlueprintName = "TichTests"
-               ReferencedContainer = "container:Tich.xcodeproj">
+               BuildableName = "Titch.xctest"
+               BlueprintName = "TitchTests"
+               ReferencedContainer = "container:Titch.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "514D43701D3CD93300218F9B"
-               BuildableName = "TichUITests.xctest"
-               BlueprintName = "TichUITests"
-               ReferencedContainer = "container:Tich.xcodeproj">
+               BuildableName = "Titch.xctest"
+               BlueprintName = "TitchUITests"
+               ReferencedContainer = "container:Titch.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "514D43511D3CD93300218F9B"
-            BuildableName = "Tich.app"
-            BlueprintName = "Tich"
-            ReferencedContainer = "container:Tich.xcodeproj">
+            BuildableName = "Titch.app"
+            BlueprintName = "Titch"
+            ReferencedContainer = "container:Titch.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "514D43511D3CD93300218F9B"
-            BuildableName = "Tich.app"
-            BlueprintName = "Tich"
-            ReferencedContainer = "container:Tich.xcodeproj">
+            BuildableName = "Titch.app"
+            BlueprintName = "Titch"
+            ReferencedContainer = "container:Titch.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "514D43511D3CD93300218F9B"
-            BuildableName = "Tich.app"
-            BlueprintName = "Tich"
-            ReferencedContainer = "container:Tich.xcodeproj">
+            BuildableName = "Titch.app"
+            BlueprintName = "Titch"
+            ReferencedContainer = "container:Titch.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

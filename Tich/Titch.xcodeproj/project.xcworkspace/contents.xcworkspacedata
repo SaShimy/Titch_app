@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Tich.xcodeproj">
+      location = "self:/Users/charlielim/Desktop/Tich_app/Tich/Titch.xcodeproj">
    </FileRef>
 </Workspace>
