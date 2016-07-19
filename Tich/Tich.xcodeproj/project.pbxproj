@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43DF833BD4FFB2A6BDAF3941 /* Pods_Tich.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98BD5F68AB60A81D1DF6ACB6 /* Pods_Tich.framework */; };
+		511E674E1D3E5F5200178D28 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511E674D1D3E5F5200178D28 /* SignUpController.swift */; };
 		514D43561D3CD93300218F9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514D43551D3CD93300218F9B /* AppDelegate.swift */; };
-		514D43581D3CD93300218F9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514D43571D3CD93300218F9B /* ViewController.swift */; };
+		514D43581D3CD93300218F9B /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514D43571D3CD93300218F9B /* LoginController.swift */; };
 		514D435B1D3CD93300218F9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 514D43591D3CD93300218F9B /* Main.storyboard */; };
 		514D435D1D3CD93300218F9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 514D435C1D3CD93300218F9B /* Assets.xcassets */; };
 		514D43601D3CD93300218F9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 514D435E1D3CD93300218F9B /* LaunchScreen.storyboard */; };
@@ -34,9 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		511E674D1D3E5F5200178D28 /* SignUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		514D43521D3CD93300218F9B /* Tich.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tich.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		514D43551D3CD93300218F9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		514D43571D3CD93300218F9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		514D43571D3CD93300218F9B /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		514D435A1D3CD93300218F9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		514D435C1D3CD93300218F9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		514D435F1D3CD93300218F9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		514D43711D3CD93300218F9B /* TichUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TichUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		514D43751D3CD93300218F9B /* TichUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TichUITests.swift; sourceTree = "<group>"; };
 		514D43771D3CD93300218F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91CE416A3698D94B6A2FD95E /* Pods-Tich.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tich.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tich/Pods-Tich.debug.xcconfig"; sourceTree = "<group>"; };
+		98BD5F68AB60A81D1DF6ACB6 /* Pods_Tich.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tich.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5BA8CD4F198CD2D5B48F9AB /* Pods-Tich.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tich.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tich/Pods-Tich.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43DF833BD4FFB2A6BDAF3941 /* Pods_Tich.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +81,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C75ABDB0D245AC31B22594A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91CE416A3698D94B6A2FD95E /* Pods-Tich.debug.xcconfig */,
+				A5BA8CD4F198CD2D5B48F9AB /* Pods-Tich.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		511E674F1D3E5FB000178D28 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				511E674D1D3E5F5200178D28 /* SignUpController.swift */,
+				514D43571D3CD93300218F9B /* LoginController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
 		514D43491D3CD93300218F9B = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +106,8 @@
 				514D43691D3CD93300218F9B /* TichTests */,
 				514D43741D3CD93300218F9B /* TichUITests */,
 				514D43531D3CD93300218F9B /* Products */,
+				2C75ABDB0D245AC31B22594A /* Pods */,
+				A938B77F2BDF24879AE92369 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +124,8 @@
 		514D43541D3CD93300218F9B /* Tich */ = {
 			isa = PBXGroup;
 			children = (
+				511E674F1D3E5FB000178D28 /* ViewController */,
 				514D43551D3CD93300218F9B /* AppDelegate.swift */,
-				514D43571D3CD93300218F9B /* ViewController.swift */,
 				514D43591D3CD93300218F9B /* Main.storyboard */,
 				514D435C1D3CD93300218F9B /* Assets.xcassets */,
 				514D435E1D3CD93300218F9B /* LaunchScreen.storyboard */,
@@ -125,6 +152,14 @@
 			path = TichUITests;
 			sourceTree = "<group>";
 		};
+		A938B77F2BDF24879AE92369 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98BD5F68AB60A81D1DF6ACB6 /* Pods_Tich.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +167,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 514D437A1D3CD93300218F9B /* Build configuration list for PBXNativeTarget "Tich" */;
 			buildPhases = (
+				1BE7DA3A10FE335730558CC0 /* [CP] Check Pods Manifest.lock */,
 				514D434E1D3CD93300218F9B /* Sources */,
 				514D434F1D3CD93300218F9B /* Frameworks */,
 				514D43501D3CD93300218F9B /* Resources */,
+				A9DC7168CAF2729D312356E7 /* [CP] Embed Pods Frameworks */,
+				26DA6D1EB5595445BC0E7E37 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,13 +289,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1BE7DA3A10FE335730558CC0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		26DA6D1EB5595445BC0E7E37 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tich/Pods-Tich-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9DC7168CAF2729D312356E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tich/Pods-Tich-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		514D434E1D3CD93300218F9B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				514D43581D3CD93300218F9B /* ViewController.swift in Sources */,
+				514D43581D3CD93300218F9B /* LoginController.swift in Sources */,
 				514D43561D3CD93300218F9B /* AppDelegate.swift in Sources */,
+				511E674E1D3E5F5200178D28 /* SignUpController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +486,7 @@
 		};
 		514D437B1D3CD93300218F9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91CE416A3698D94B6A2FD95E /* Pods-Tich.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Tich/Info.plist;
@@ -410,6 +498,7 @@
 		};
 		514D437C1D3CD93300218F9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5BA8CD4F198CD2D5B48F9AB /* Pods-Tich.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Tich/Info.plist;
@@ -484,6 +573,7 @@
 				514D437C1D3CD93300218F9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		514D437D1D3CD93300218F9B /* Build configuration list for PBXNativeTarget "TichTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +582,7 @@
 				514D437F1D3CD93300218F9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		514D43801D3CD93300218F9B /* Build configuration list for PBXNativeTarget "TichUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +591,7 @@
 				514D43821D3CD93300218F9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
