@@ -41,7 +41,7 @@
                                 <rect key="frame" x="274" y="255" width="52" height="30"/>
                                 <state key="normal" title="Sign up"/>
                                 <connections>
-                                    <action selector="signupButton:" destination="f0e-X7-12D" eventType="touchUpInside" id="yqb-c2-nCv"/>
+                                    <segue destination="CrT-Aj-ybh" kind="show" id="nv0-mZ-Rxc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -61,6 +61,7 @@
                     <connections>
                         <outlet property="loginText" destination="apb-L9-Vas" id="CbR-Kk-RHA"/>
                         <outlet property="passwordText" destination="tyE-oK-aig" id="W91-va-dIL"/>
+                        <segue destination="Asr-4h-4Bl" kind="show" identifier="OnConnect" id="hhu-Dx-0Sk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GWS-rC-jHw" sceneMemberID="firstResponder"/>
@@ -81,7 +82,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nIz-s2-cdb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1054" y="341"/>
+            <point key="canvasLocation" x="1026" y="367"/>
         </scene>
         <!--Collection View Controller-->
         <scene sceneID="aRr-hr-iQS">

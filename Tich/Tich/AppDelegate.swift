@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Tich
+//  Titch
 //
 //  Created by Antoine Gunzburger on 18/07/2016.
 //  Copyright © 2016 etna. All rights reserved.

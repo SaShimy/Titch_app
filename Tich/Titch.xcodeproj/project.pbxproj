@@ -16,6 +16,7 @@
 		514D43601D3CD93300218F9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 514D435E1D3CD93300218F9B /* LaunchScreen.storyboard */; };
 		514D436B1D3CD93300218F9B /* TichTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514D436A1D3CD93300218F9B /* TichTests.swift */; };
 		514D43761D3CD93300218F9B /* TichUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514D43751D3CD93300218F9B /* TichUITests.swift */; };
+		778F735BA5D327A0D8105434 /* Pods_Titch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD61FFDA95DF436F2A5A06B0 /* Pods_Titch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,9 +51,12 @@
 		514D43711D3CD93300218F9B /* Titch.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Titch.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		514D43751D3CD93300218F9B /* TichUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TichUITests.swift; sourceTree = "<group>"; };
 		514D43771D3CD93300218F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51BBFE4B8AF78C483097C8CE /* Pods-Titch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Titch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Titch/Pods-Titch.debug.xcconfig"; sourceTree = "<group>"; };
 		91CE416A3698D94B6A2FD95E /* Pods-Tich.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tich.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tich/Pods-Tich.debug.xcconfig"; sourceTree = "<group>"; };
 		98BD5F68AB60A81D1DF6ACB6 /* Pods_Tich.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tich.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5BA8CD4F198CD2D5B48F9AB /* Pods-Tich.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tich.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tich/Pods-Tich.release.xcconfig"; sourceTree = "<group>"; };
+		B99D202E61EB78E69A2DD075 /* Pods-Titch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Titch.release.xcconfig"; path = "Pods/Target Support Files/Pods-Titch/Pods-Titch.release.xcconfig"; sourceTree = "<group>"; };
+		BD61FFDA95DF436F2A5A06B0 /* Pods_Titch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Titch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43DF833BD4FFB2A6BDAF3941 /* Pods_Tich.framework in Frameworks */,
+				778F735BA5D327A0D8105434 /* Pods_Titch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +91,8 @@
 			children = (
 				91CE416A3698D94B6A2FD95E /* Pods-Tich.debug.xcconfig */,
 				A5BA8CD4F198CD2D5B48F9AB /* Pods-Tich.release.xcconfig */,
+				51BBFE4B8AF78C483097C8CE /* Pods-Titch.debug.xcconfig */,
+				B99D202E61EB78E69A2DD075 /* Pods-Titch.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -102,7 +109,7 @@
 		514D43491D3CD93300218F9B = {
 			isa = PBXGroup;
 			children = (
-				514D43541D3CD93300218F9B /* Tich */,
+				514D43541D3CD93300218F9B /* Titch */,
 				514D43691D3CD93300218F9B /* TichTests */,
 				514D43741D3CD93300218F9B /* TichUITests */,
 				514D43531D3CD93300218F9B /* Products */,
@@ -121,7 +128,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		514D43541D3CD93300218F9B /* Tich */ = {
+		514D43541D3CD93300218F9B /* Titch */ = {
 			isa = PBXGroup;
 			children = (
 				511E674F1D3E5FB000178D28 /* ViewController */,
@@ -131,6 +138,7 @@
 				514D435E1D3CD93300218F9B /* LaunchScreen.storyboard */,
 				514D43611D3CD93300218F9B /* Info.plist */,
 			);
+			name = Titch;
 			path = Tich;
 			sourceTree = "<group>";
 		};
@@ -156,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				98BD5F68AB60A81D1DF6ACB6 /* Pods_Tich.framework */,
+				BD61FFDA95DF436F2A5A06B0 /* Pods_Titch.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -317,7 +326,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tich/Pods-Tich-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Titch/Pods-Titch-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A9DC7168CAF2729D312356E7 /* [CP] Embed Pods Frameworks */ = {
@@ -332,7 +341,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tich/Pods-Tich-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Titch/Pods-Titch-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -486,7 +495,7 @@
 		};
 		514D437B1D3CD93300218F9B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 91CE416A3698D94B6A2FD95E /* Pods-Tich.debug.xcconfig */;
+			baseConfigurationReference = 51BBFE4B8AF78C483097C8CE /* Pods-Titch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Tich/Info.plist;
@@ -498,7 +507,7 @@
 		};
 		514D437C1D3CD93300218F9B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A5BA8CD4F198CD2D5B48F9AB /* Pods-Tich.release.xcconfig */;
+			baseConfigurationReference = B99D202E61EB78E69A2DD075 /* Pods-Titch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Tich/Info.plist;

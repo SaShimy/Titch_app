@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A774C0851B655D68DD391B8A2C39A797"
-               BuildableName = "Pods_Tich.framework"
-               BlueprintName = "Pods-Tich"
+               BlueprintIdentifier = "EA0EE881D966BDFEF5AD8985031F13F5"
+               BuildableName = "Pods_Titch.framework"
+               BlueprintName = "Pods-Titch"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A774C0851B655D68DD391B8A2C39A797"
-            BuildableName = "Pods_Tich.framework"
-            BlueprintName = "Pods-Tich"
+            BlueprintIdentifier = "EA0EE881D966BDFEF5AD8985031F13F5"
+            BuildableName = "Pods_Titch.framework"
+            BlueprintName = "Pods-Titch"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
