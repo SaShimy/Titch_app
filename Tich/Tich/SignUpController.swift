@@ -7,12 +7,24 @@
 //
 
 import UIKit
+import SwiftyJSON
+import Alamofire
+import Toast_Swift
 
 class SignUpController: UIViewController {
     
+    @IBOutlet var loginInput: UITextField!
+    
+    @IBOutlet var emailInput: UITextField!
+    
+    @IBOutlet var passwordInput: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("sign up")
+        
+        self.loginInput.text = nil
+        self.emailInput.text = nil
+        self.passwordInput.text = nil
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -21,4 +33,41 @@ class SignUpController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-}
+    @IBAction func actionSignUp(sender: UIButton) {
+        var login:String!;
+        var email:String!;
+        var pswd:String!;
+        
+        login = self.loginInput.text
+        email = self.emailInput.text
+        pswd = self.passwordInput.text
+
+        if ( login != nil && email != nil && pswd != nil) {
+            let parameters = [
+                "login" : self.loginInput.text,
+                "email": self.emailInput.text!,
+                "password": self.passwordInput.text!
+            ]
+            Alamofire.request(.POST, "http://symfonyios.cloudapp.net/user/signup", parameters: parameters)
+                .validate()
+                .responseJSON { response in
+                    if (response.result.value != nil) {
+                        debugPrint(response.result.value)
+                        let json = JSON(response.result.value!)
+                        let login = json["login"].stringValue
+                        print("Le login : \(login)")
+                        var text = "L'utilisateur " + login + " a été créé."
+                        self.view.makeToast(text)
+                        sleep(3)
+                        self.performSegueWithIdentifier("OnSignedUp", sender: self)
+                    }
+                    else {
+                        self.view.makeToast("L'utilisateur ou l'email est déjà utilisé.")
+                    }
+            }
+        }
+        else {
+            self.view.makeToast("Veuillez remplir tous les champs.")
+        }
+    }
+  }
