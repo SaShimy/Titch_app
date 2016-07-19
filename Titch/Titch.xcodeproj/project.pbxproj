@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		518F820B1D3E9D65002A39C1 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518F820A1D3E9D65002A39C1 /* LoginController.swift */; };
+		518F820D1D3E9D7C002A39C1 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518F820C1D3E9D7C002A39C1 /* SignUpController.swift */; };
 		51FAB1AD1D3E9AD000635172 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FAB1AC1D3E9AD000635172 /* AppDelegate.swift */; };
 		51FAB1B21D3E9AD000635172 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51FAB1B01D3E9AD000635172 /* Main.storyboard */; };
 		51FAB1B41D3E9AD000635172 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51FAB1B31D3E9AD000635172 /* Assets.xcassets */; };
 		51FAB1B71D3E9AD000635172 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51FAB1B51D3E9AD000635172 /* LaunchScreen.storyboard */; };
 		51FAB1C21D3E9AD000635172 /* TitchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FAB1C11D3E9AD000635172 /* TitchTests.swift */; };
 		51FAB1CD1D3E9AD000635172 /* TitchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FAB1CC1D3E9AD000635172 /* TitchUITests.swift */; };
-		51FAB1DD1D3E9B0D00635172 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FAB1DB1D3E9B0D00635172 /* SignUpController.swift */; };
-		51FAB1DE1D3E9B0D00635172 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FAB1DC1D3E9B0D00635172 /* LoginController.swift */; };
 		CBD9BD351109112781A4A565 /* Pods_Titch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76D60E31016A46F5F4683F0C /* Pods_Titch.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		518F820A1D3E9D65002A39C1 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		518F820C1D3E9D7C002A39C1 /* SignUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		51FAB1A91D3E9AD000635172 /* Titch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Titch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51FAB1AC1D3E9AD000635172 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51FAB1B11D3E9AD000635172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -48,8 +50,6 @@
 		51FAB1C81D3E9AD000635172 /* TitchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TitchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51FAB1CC1D3E9AD000635172 /* TitchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitchUITests.swift; sourceTree = "<group>"; };
 		51FAB1CE1D3E9AD000635172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		51FAB1DB1D3E9B0D00635172 /* SignUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpController.swift; path = ../../Work/Tich_app/Tich/Tich/SignUpController.swift; sourceTree = "<group>"; };
-		51FAB1DC1D3E9B0D00635172 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginController.swift; path = ../../Work/Tich_app/Tich/Tich/LoginController.swift; sourceTree = "<group>"; };
 		76D60E31016A46F5F4683F0C /* Pods_Titch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Titch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC9A987E19272AE9CFFDB1BB /* Pods-Titch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Titch.release.xcconfig"; path = "Pods/Target Support Files/Pods-Titch/Pods-Titch.release.xcconfig"; sourceTree = "<group>"; };
 		FC2967296A88249BC41830DE /* Pods-Titch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Titch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Titch/Pods-Titch.debug.xcconfig"; sourceTree = "<group>"; };
@@ -154,8 +154,8 @@
 		51FAB1DA1D3E9AD800635172 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				51FAB1DB1D3E9B0D00635172 /* SignUpController.swift */,
-				51FAB1DC1D3E9B0D00635172 /* LoginController.swift */,
+				518F820A1D3E9D65002A39C1 /* LoginController.swift */,
+				518F820C1D3E9D7C002A39C1 /* SignUpController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -343,8 +343,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				51FAB1AD1D3E9AD000635172 /* AppDelegate.swift in Sources */,
-				51FAB1DE1D3E9B0D00635172 /* LoginController.swift in Sources */,
-				51FAB1DD1D3E9B0D00635172 /* SignUpController.swift in Sources */,
+				518F820B1D3E9D65002A39C1 /* LoginController.swift in Sources */,
+				518F820D1D3E9D7C002A39C1 /* SignUpController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
