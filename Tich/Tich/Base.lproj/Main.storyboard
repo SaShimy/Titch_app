@@ -152,9 +152,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8P-Yn-7MX">
                                 <rect key="frame" x="274" y="274" width="52" height="30"/>
                                 <state key="normal" title="Sign up"/>
-                                <connections>
-                                    <action selector="actionSignUp:" destination="CrT-Aj-ybh" eventType="touchUpInside" id="ovr-Q9-GrM"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -171,13 +168,6 @@
                             <constraint firstItem="OwR-qy-Ip9" firstAttribute="top" secondItem="6Rc-Mw-G7O" secondAttribute="bottom" constant="30" id="vGM-HK-OPI"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="actionSignUp" destination="J8P-Yn-7MX" id="4Br-e1-Vsm"/>
-                        <outlet property="emailInput" destination="OwR-qy-Ip9" id="yqO-gb-h8A"/>
-                        <outlet property="loginInput" destination="6Rc-Mw-G7O" id="pgP-Hh-qTV"/>
-                        <outlet property="passwordInput" destination="5Vq-av-tlD" id="5yl-yS-iIp"/>
-                        <segue destination="f0e-X7-12D" kind="show" identifier="OnSignedUp" id="Cra-Sc-h3B"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N2s-LN-f9T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
