@@ -484,6 +484,7 @@
 				514D437C1D3CD93300218F9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		514D437D1D3CD93300218F9B /* Build configuration list for PBXNativeTarget "TichTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +493,7 @@
 				514D437F1D3CD93300218F9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		514D43801D3CD93300218F9B /* Build configuration list for PBXNativeTarget "TichUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +502,7 @@
 				514D43821D3CD93300218F9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
