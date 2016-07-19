@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="Ztz-ug-VjY">
             <objects>
-                <viewController id="TcG-fH-PlV" customClass="ViewController" customModule="Tich" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="main" id="TcG-fH-PlV" customClass="ViewController" customModule="Titch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vLK-RX-eWN"/>
                         <viewControllerLayoutGuide type="bottom" id="M49-4s-dyf"/>
@@ -26,6 +26,13 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ecm-PP-KEj">
+                                <rect key="frame" x="110" y="379" width="101" height="30"/>
+                                <state key="normal" title="Connexion"/>
+                                <connections>
+                                    <action selector="Connexion:" destination="TcG-fH-PlV" eventType="touchUpInside" id="qU6-L9-6GO"/>
+                                </connections>
+                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Antoine" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ad2-ED-EBp">
                                 <rect key="frame" x="131" y="235" width="148" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -49,11 +56,12 @@
                                     <constraint firstAttribute="width" constant="96" id="weu-5R-xLo"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ecm-PP-KEj">
-                                <rect key="frame" x="110" y="379" width="101" height="30"/>
-                                <state key="normal" title="Connexion"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yE2-I3-gUU">
+                                <rect key="frame" x="124" y="432" width="72" height="30"/>
+                                <state key="normal" title="Inscription"/>
                                 <connections>
-                                    <segue destination="2Xs-Qz-Wuy" kind="push" id="hVV-0b-hQJ"/>
+                                    <action selector="Inscript:" destination="TcG-fH-PlV" eventType="touchUpInside" id="bvA-wI-brn"/>
+                                    <segue destination="eXy-NR-Cmo" kind="modal" identifier="inscription" id="fDG-Wm-L0L"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -66,8 +74,10 @@
                             <constraint firstItem="0H9-io-l1H" firstAttribute="baseline" secondItem="RDA-De-9pG" secondAttribute="firstBaseline" constant="8" id="Fy0-QE-cv1"/>
                             <constraint firstItem="ad2-ED-EBp" firstAttribute="leading" secondItem="0H9-io-l1H" secondAttribute="leading" id="I1R-Bt-DTe"/>
                             <constraint firstItem="RDA-De-9pG" firstAttribute="centerY" secondItem="0H9-io-l1H" secondAttribute="centerY" constant="-8" id="IUP-RC-SNW"/>
+                            <constraint firstItem="yE2-I3-gUU" firstAttribute="centerX" secondItem="Ecm-PP-KEj" secondAttribute="centerX" id="IkI-y7-Vw6"/>
                             <constraint firstItem="M49-4s-dyf" firstAttribute="top" secondItem="Ecm-PP-KEj" secondAttribute="bottom" constant="159" id="YWd-sN-cJt"/>
                             <constraint firstItem="kbe-Hw-O7x" firstAttribute="centerX" secondItem="BMX-xs-QNF" secondAttribute="centerX" id="a1M-ET-91f"/>
+                            <constraint firstItem="yE2-I3-gUU" firstAttribute="top" secondItem="Ecm-PP-KEj" secondAttribute="bottom" constant="23" id="aN3-UX-zvU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ad2-ED-EBp" secondAttribute="trailing" constant="21" id="f0R-7U-ZxY"/>
                             <constraint firstItem="6wQ-su-zXb" firstAttribute="centerY" secondItem="ad2-ED-EBp" secondAttribute="centerY" constant="-0.5" id="nyd-w3-64w"/>
                             <constraint firstItem="6wQ-su-zXb" firstAttribute="leading" secondItem="BMX-xs-QNF" secondAttribute="leadingMargin" id="oTk-0c-r6q"/>
@@ -77,15 +87,19 @@
                             <constraint firstItem="Ecm-PP-KEj" firstAttribute="leading" secondItem="BMX-xs-QNF" secondAttribute="leadingMargin" constant="90" id="zhT-7F-1V1"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="iAh-nZ-50N"/>
+                    <connections>
+                        <segue destination="2Xs-Qz-Wuy" kind="modal" identifier="nextview" modalTransitionStyle="coverVertical" id="bX7-Gr-LUf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9qQ-74-XIY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-450" y="224"/>
+            <point key="canvasLocation" x="-543" y="224"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="skW-vZ-BOY">
             <objects>
-                <viewController id="2Xs-Qz-Wuy" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="board" id="2Xs-Qz-Wuy" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Urh-2N-Ei8"/>
                         <viewControllerLayoutGuide type="bottom" id="5cF-O3-D1I"/>
@@ -99,7 +113,36 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dhn-r2-AZy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="66" y="224"/>
+            <point key="canvasLocation" x="-48" y="53"/>
+        </scene>
+        <!--Inscription Controller-->
+        <scene sceneID="DQL-oM-p9x">
+            <objects>
+                <viewController id="eXy-NR-Cmo" customClass="InscriptionController" customModule="Titch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WYi-ae-qR5"/>
+                        <viewControllerLayoutGuide type="bottom" id="aW6-bf-ge6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eh7-Te-gjO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Nm-Tr-e3O">
+                                <rect key="frame" x="129" y="421" width="72" height="30"/>
+                                <state key="normal" title="Inscription"/>
+                                <connections>
+                                    <action selector="InscriptionOk:" destination="eXy-NR-Cmo" eventType="touchUpInside" id="PWx-3p-TBn"/>
+                                    <segue destination="TcG-fH-PlV" kind="modal" identifier="InscOkay" id="ddQ-iY-WdT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1Ee-eI-7dM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v7N-oz-mfQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9" y="666"/>
         </scene>
     </scenes>
     <resources>
