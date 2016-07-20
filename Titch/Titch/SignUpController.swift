@@ -44,7 +44,7 @@ class SignUpController: UIViewController {
                 "mail": self.emailInput.text!,
                 "password": self.passwordInput.text!
             ]
-            Alamofire.request(.POST, "http://symfonyios.cloudapp.net/user/signup", parameters: parameters)
+            Alamofire.request(.POST, "http://symfonyios.cloudapp.net/signup", parameters: parameters)
                 .validate()
                 .responseJSON { response in
                     if (response.result.value != nil) {
@@ -54,7 +54,7 @@ class SignUpController: UIViewController {
                         print("Le login : \(login)")
                         let text = "L'utilisateur " + login + " a été créé."
                         print(text)
-                        LoginController.toastThis(text)
+                        //LoginController.toastThis(text)
                         self.performSegueWithIdentifier("OnSignedUp", sender: self)
                     }
                     else {

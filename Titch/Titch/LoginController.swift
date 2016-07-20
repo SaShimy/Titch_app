@@ -37,6 +37,7 @@ class LoginController: UIViewController {
                 else {
                     self.view.makeToast("Le mot de passe ou l'utilisateur ne sont pas corrects.")
                 }
+                 print("Leq token : \(token)")
         }
     }
     
@@ -50,9 +51,9 @@ class LoginController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func toastThis(String: msg) {
-        self.view.makeToast(msg)
-    }
+//    func toastThis(String: msg) {
+//        self.view.makeToast(msg)
+//    }
     
     
 }
