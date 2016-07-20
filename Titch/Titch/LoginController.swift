@@ -50,5 +50,9 @@ class LoginController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func toastThis(String: msg) {
+        self.view.makeToast(msg)
+    }
+    
     
 }
