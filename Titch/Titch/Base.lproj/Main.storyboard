@@ -17,14 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WcQ-Sx-0a7">
-                                <rect key="frame" x="252" y="126" width="97" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="97" id="C6O-pG-dSa"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DmO-EY-wIb">
                                 <rect key="frame" x="252" y="185" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -46,6 +38,14 @@
                                     </segue>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WcQ-Sx-0a7">
+                                <rect key="frame" x="252" y="126" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="C6O-pG-dSa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -61,7 +61,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="loginText" destination="WcQ-Sx-0a7" id="q6d-I8-gx3"/>
+                        <outlet property="emailText" destination="WcQ-Sx-0a7" id="n2r-FY-a6C"/>
                         <outlet property="passwordText" destination="DmO-EY-wIb" id="deg-lr-GJ4"/>
                         <segue destination="MqO-8h-I8d" kind="show" identifier="OnConnect" id="7Ex-Cb-4KF">
                             <nil key="action"/>
@@ -144,16 +144,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JY2-Xi-WlI">
-                                <rect key="frame" x="252" y="87" width="97" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="97" id="N1I-Mk-lvp"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="147-Id-gyp">
                                 <rect key="frame" x="252" y="147" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="hQB-jW-4aR"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -172,21 +167,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Xus-QZ-cbu" firstAttribute="top" secondItem="1tB-QO-RXC" secondAttribute="bottom" constant="36" id="G2q-pi-AZW"/>
-                            <constraint firstItem="JY2-Xi-WlI" firstAttribute="trailing" secondItem="147-Id-gyp" secondAttribute="trailing" id="HGo-JB-t4k"/>
-                            <constraint firstItem="1tB-QO-RXC" firstAttribute="centerX" secondItem="Xus-QZ-cbu" secondAttribute="centerX" id="IYs-K8-n5e"/>
-                            <constraint firstItem="JY2-Xi-WlI" firstAttribute="leading" secondItem="147-Id-gyp" secondAttribute="leading" id="KUL-1h-7Vd"/>
-                            <constraint firstItem="147-Id-gyp" firstAttribute="top" secondItem="JY2-Xi-WlI" secondAttribute="bottom" constant="30" id="McK-WX-TX2"/>
-                            <constraint firstItem="1tB-QO-RXC" firstAttribute="top" secondItem="147-Id-gyp" secondAttribute="bottom" constant="31" id="b2b-wP-tr5"/>
-                            <constraint firstItem="147-Id-gyp" firstAttribute="trailing" secondItem="1tB-QO-RXC" secondAttribute="trailing" id="bN4-bM-XXD"/>
-                            <constraint firstItem="147-Id-gyp" firstAttribute="leading" secondItem="1tB-QO-RXC" secondAttribute="leading" id="peX-VT-9Dc"/>
-                            <constraint firstItem="JY2-Xi-WlI" firstAttribute="centerX" secondItem="Bpv-Is-TRL" secondAttribute="centerX" id="s5q-nh-z0a"/>
-                            <constraint firstItem="JY2-Xi-WlI" firstAttribute="top" secondItem="6VU-RO-UZy" secondAttribute="bottom" constant="67" id="sbb-Fc-2UC"/>
+                            <constraint firstItem="147-Id-gyp" firstAttribute="top" secondItem="6VU-RO-UZy" secondAttribute="bottom" constant="127" id="0eE-cV-FFC"/>
+                            <constraint firstItem="1tB-QO-RXC" firstAttribute="centerX" secondItem="Xus-QZ-cbu" secondAttribute="centerX" id="CbY-fQ-9Ky"/>
+                            <constraint firstItem="Xus-QZ-cbu" firstAttribute="top" secondItem="1tB-QO-RXC" secondAttribute="bottom" constant="36" id="HRZ-gu-fav"/>
+                            <constraint firstItem="147-Id-gyp" firstAttribute="leading" secondItem="1tB-QO-RXC" secondAttribute="leading" id="RJW-TP-55h"/>
+                            <constraint firstItem="147-Id-gyp" firstAttribute="centerX" secondItem="Bpv-Is-TRL" secondAttribute="centerX" id="cSb-R9-30y"/>
+                            <constraint firstItem="1tB-QO-RXC" firstAttribute="top" secondItem="147-Id-gyp" secondAttribute="bottom" constant="31" id="f1n-pU-P3G"/>
+                            <constraint firstItem="147-Id-gyp" firstAttribute="trailing" secondItem="1tB-QO-RXC" secondAttribute="trailing" id="ubU-kN-BZG"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="emailInput" destination="147-Id-gyp" id="fhg-6i-UcU"/>
-                        <outlet property="loginInput" destination="JY2-Xi-WlI" id="Tvz-L5-k3z"/>
                         <outlet property="passwordInput" destination="1tB-QO-RXC" id="LVP-TD-M0j"/>
                         <segue destination="rcB-V1-WWo" kind="show" identifier="OnSignedUp" id="ZMI-y9-kpF"/>
                     </connections>

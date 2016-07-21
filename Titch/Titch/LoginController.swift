@@ -14,14 +14,16 @@ import Toast_Swift
 var token : String = String()
 
 class LoginController: UIViewController {
-    @IBOutlet weak var loginText: UITextField!
+
+    @IBOutlet var emailText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
+    let global:NSUserDefaults = NSUserDefaults.standardUserDefaults()
     @IBAction func loginButton(sender: AnyObject) {
         let parameters = [
          "grant_type": "password",
          "client_id": "1_3bcbxd9e24g0gk4swg0kwgcwg4o8k8g4g888kwc44gcc0gwwk4",
          "client_secret": "4ok2x70rlfokc8g0wws8c8kwcokw80k44sg48goc0ok4w0so0k",
-         "username": loginText.text!,
+         "username": emailText.text!,
          "password": passwordText.text!
          ]
         
@@ -45,6 +47,11 @@ class LoginController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        if let myString = global.valueForKey("SignedUpEmail") as? String
+        {
+           self.view.makeToast("Le compte avec l'email \(myString) a été créé.")
+            global.removeObjectForKey("SignedUpEmail")
+        }
     }
     
     override func didReceiveMemoryWarning() {
