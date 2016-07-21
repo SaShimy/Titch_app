@@ -39,7 +39,6 @@ class Functions {
                     global.setObject("ok", forKey:"ConnectionState")
                 }
                 else {
-                    
                     ConnectionState = "ko"
                     print("3 \(ConnectionState)")
                     /*self.view.makeToast("Le mot de passe ou l'utilisateur ne sont pas corrects.")*/

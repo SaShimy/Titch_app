@@ -20,7 +20,7 @@ class HomeController: UIViewController {
         let headers = [
             "Authorization": "Bearer " + token
         ]
-        Alamofire.request(.GET, "http://symfonyios.cloudapp.net/user/api/me", headers: headers)
+        Alamofire.request(.GET, "http://symfonyios.cloudapp.net/api/user/me", headers: headers)
         .validate()
         .responseJSON { response in
             if (response.result.value != nil) {
