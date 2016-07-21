@@ -10,10 +10,22 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
-class HomeController: UIViewController {
+class HomeController: UIViewController, UIPopoverPresentationControllerDelegate {
     @IBOutlet weak var emailText: UILabel!
     @IBOutlet weak var ageText: UILabel!
     @IBOutlet weak var genderText: UILabel!
+    @IBOutlet weak var firstnameText: UILabel!
+    @IBOutlet weak var lastnameText: UILabel!
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "popUp" {
+            let popoverViewController = segue.destinationViewController
+            popoverViewController.modalPresentationStyle = UIModalPresentationStyle.Popover
+            popoverViewController.popoverPresentationController!.delegate = self
+        }
+    }
+    func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {
+        return UIModalPresentationStyle.None
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         print(token)
@@ -29,6 +41,8 @@ class HomeController: UIViewController {
                 self.emailText.text = "Email : " + json["email"].stringValue
                 self.ageText.text = "Age : " + json["age"].stringValue
                 self.genderText.text = "Sexe : " + json["gender"].stringValue
+                self.firstnameText.text = "Prénom : " + json["firstname"].stringValue
+                self.lastnameText.text = "Sexe : " + json["lastname"].stringValue
             }
         }
 

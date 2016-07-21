@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Login Controller-->
@@ -88,6 +89,47 @@
             </objects>
             <point key="canvasLocation" x="1026" y="367"/>
         </scene>
+        <!--Pop Up Controller-->
+        <scene sceneID="zIq-Rf-N0t">
+            <objects>
+                <viewController storyboardIdentifier="PopUp" id="fRU-en-Xj5" customClass="PopUpController" customModule="Titch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Blo-t0-tbH"/>
+                        <viewControllerLayoutGuide type="bottom" id="wYa-uH-XaB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="opX-XO-MyG">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tUc-Qa-OJb">
+                                <rect key="frame" x="16" y="0.0" width="168" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMC-uO-Lwu">
+                                <rect key="frame" x="16" y="27" width="168" height="23"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tUc-Qa-OJb" firstAttribute="leading" secondItem="PMC-uO-Lwu" secondAttribute="leading" id="DdJ-Fn-mMV"/>
+                            <constraint firstItem="tUc-Qa-OJb" firstAttribute="trailing" secondItem="PMC-uO-Lwu" secondAttribute="trailing" id="HOL-w1-1Ap"/>
+                            <constraint firstItem="tUc-Qa-OJb" firstAttribute="top" secondItem="Blo-t0-tbH" secondAttribute="bottom" id="YTf-M3-swh"/>
+                            <constraint firstItem="PMC-uO-Lwu" firstAttribute="top" secondItem="Blo-t0-tbH" secondAttribute="bottom" constant="27" id="a0i-q5-mxR"/>
+                            <constraint firstItem="tUc-Qa-OJb" firstAttribute="leading" secondItem="opX-XO-MyG" secondAttribute="leadingMargin" id="dHw-16-lYt"/>
+                            <constraint firstItem="tUc-Qa-OJb" firstAttribute="trailing" secondItem="opX-XO-MyG" secondAttribute="trailingMargin" id="dpN-bm-WdU"/>
+                            <constraint firstItem="PMC-uO-Lwu" firstAttribute="bottom" secondItem="wYa-uH-XaB" secondAttribute="top" id="uyM-h8-PJK"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="200" height="50"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KBS-Qp-GAK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1716" y="-322"/>
+        </scene>
         <!--Home Controller-->
         <scene sceneID="NrK-oZ-sum">
             <objects>
@@ -118,6 +160,31 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecv-VP-SfX">
+                                <rect key="frame" x="68" y="285" width="48" height="30"/>
+                                <state key="normal" title="Modify"/>
+                                <connections>
+                                    <segue destination="fRU-en-Xj5" kind="popoverPresentation" identifier="popUp" popoverAnchorView="ecv-VP-SfX" id="vZm-Pi-cH8">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Mf-Xu-gCr">
+                                <rect key="frame" x="68" y="200" width="512" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Do-2q-1h4">
+                                <rect key="frame" x="68" y="229" width="512" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="moJ-SW-YGI">
+                                <rect key="frame" x="244" y="562" width="112" height="30"/>
+                                <state key="normal" title="Bouton de david"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -125,7 +192,9 @@
                     <connections>
                         <outlet property="ageText" destination="wCb-of-S6H" id="REs-oc-pfB"/>
                         <outlet property="emailText" destination="zM1-qQ-ZLW" id="BgK-Xs-zAz"/>
+                        <outlet property="firstnameText" destination="2Mf-Xu-gCr" id="1QN-9l-ubB"/>
                         <outlet property="genderText" destination="rMd-jP-7jA" id="Fha-5Z-H43"/>
+                        <outlet property="lastnameText" destination="7Do-2q-1h4" id="IWJ-u8-KIQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cLl-03-ofR" userLabel="First Responder" sceneMemberID="firstResponder"/>
