@@ -1,4 +1,4 @@
-// !$*UTF8*$!
+		// !$*UTF8*$!
 {
 	archiveVersion = 1;
 	classes = {
@@ -15,7 +15,11 @@
 		514D43601D3CD93300218F9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 514D435E1D3CD93300218F9B /* LaunchScreen.storyboard */; };
 		514D436B1D3CD93300218F9B /* TichTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514D436A1D3CD93300218F9B /* TichTests.swift */; };
 		514D43761D3CD93300218F9B /* TichUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514D43751D3CD93300218F9B /* TichUITests.swift */; };
+<<<<<<< HEAD
 		64163A71FFE1A1A3CD6523AF /* Pods_Titch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C84C9C200F6A56F59FB9EFA /* Pods_Titch.framework */; };
+=======
+		691505F5C1BDFFF3C102E6D8 /* Pods_Titch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D08220A5DE369BA35943159 /* Pods_Titch.framework */; };
+>>>>>>> origin/master
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +56,13 @@
 		514D43711D3CD93300218F9B /* Titch.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Titch.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		514D43751D3CD93300218F9B /* TichUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TichUITests.swift; sourceTree = "<group>"; };
 		514D43771D3CD93300218F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		B9E863045FFF3DCE0C0A4D59 /* Pods-Titch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Titch.release.xcconfig"; path = "Pods/Target Support Files/Pods-Titch/Pods-Titch.release.xcconfig"; sourceTree = "<group>"; };
+=======
+		6D08220A5DE369BA35943159 /* Pods_Titch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Titch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B8E49C9806F395447A2106E /* Pods-Titch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Titch.release.xcconfig"; path = "Pods/Target Support Files/Pods-Titch/Pods-Titch.release.xcconfig"; sourceTree = "<group>"; };
+		9FE702BB4EFBF4E2BE0BBBEF /* Pods-Titch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Titch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Titch/Pods-Titch.debug.xcconfig"; sourceTree = "<group>"; };
+>>>>>>> origin/master
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +70,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				64163A71FFE1A1A3CD6523AF /* Pods_Titch.framework in Frameworks */,
+=======
+				691505F5C1BDFFF3C102E6D8 /* Pods_Titch.framework in Frameworks */,
+>>>>>>> origin/master
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,8 +102,13 @@
 				514D43691D3CD93300218F9B /* TichTests */,
 				514D43741D3CD93300218F9B /* TichUITests */,
 				514D43531D3CD93300218F9B /* Products */,
+<<<<<<< HEAD
 				864B6A2A83BB43E8FB3C60CB /* Pods */,
 				A292BC84C7D6E4BDE4286B0C /* Frameworks */,
+=======
+				E2F8547EDEA5AA94E96C4CCE /* Pods */,
+				F176052359C597292FD0A41A /* Frameworks */,
+>>>>>>> origin/master
 			);
 			sourceTree = "<group>";
 		};
@@ -135,19 +154,34 @@
 			path = TichUITests;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		864B6A2A83BB43E8FB3C60CB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				24DA459001E7CE79E197B902 /* Pods-Titch.debug.xcconfig */,
 				B9E863045FFF3DCE0C0A4D59 /* Pods-Titch.release.xcconfig */,
+=======
+		E2F8547EDEA5AA94E96C4CCE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9FE702BB4EFBF4E2BE0BBBEF /* Pods-Titch.debug.xcconfig */,
+				9B8E49C9806F395447A2106E /* Pods-Titch.release.xcconfig */,
+>>>>>>> origin/master
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		A292BC84C7D6E4BDE4286B0C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				1C84C9C200F6A56F59FB9EFA /* Pods_Titch.framework */,
+=======
+		F176052359C597292FD0A41A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D08220A5DE369BA35943159 /* Pods_Titch.framework */,
+>>>>>>> origin/master
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -159,12 +193,21 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 514D437A1D3CD93300218F9B /* Build configuration list for PBXNativeTarget "Titch" */;
 			buildPhases = (
+<<<<<<< HEAD
 				00EF6270A1157CBFDFFCFF03 /* [CP] Check Pods Manifest.lock */,
 				514D434E1D3CD93300218F9B /* Sources */,
 				514D434F1D3CD93300218F9B /* Frameworks */,
 				514D43501D3CD93300218F9B /* Resources */,
 				A56033A41C862F3966BBCA89 /* [CP] Embed Pods Frameworks */,
 				BB28B39D2D8D20CC0317196B /* [CP] Copy Pods Resources */,
+=======
+				A11CC855B21A0F74B67B11D5 /* [CP] Check Pods Manifest.lock */,
+				514D434E1D3CD93300218F9B /* Sources */,
+				514D434F1D3CD93300218F9B /* Frameworks */,
+				514D43501D3CD93300218F9B /* Resources */,
+				42F18356418F85F3DFAA974B /* [CP] Embed Pods Frameworks */,
+				C7E5D7C915794930F168A13E /* [CP] Copy Pods Resources */,
+>>>>>>> origin/master
 			);
 			buildRules = (
 			);
@@ -282,37 +325,63 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+<<<<<<< HEAD
 		00EF6270A1157CBFDFFCFF03 /* [CP] Check Pods Manifest.lock */ = {
+=======
+		42F18356418F85F3DFAA974B /* [CP] Embed Pods Frameworks */ = {
+>>>>>>> origin/master
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+<<<<<<< HEAD
 			name = "[CP] Check Pods Manifest.lock";
+=======
+			name = "[CP] Embed Pods Frameworks";
+>>>>>>> origin/master
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
+<<<<<<< HEAD
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		A56033A41C862F3966BBCA89 /* [CP] Embed Pods Frameworks */ = {
+=======
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Titch/Pods-Titch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A11CC855B21A0F74B67B11D5 /* [CP] Check Pods Manifest.lock */ = {
+>>>>>>> origin/master
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+<<<<<<< HEAD
 			name = "[CP] Embed Pods Frameworks";
+=======
+			name = "[CP] Check Pods Manifest.lock";
+>>>>>>> origin/master
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
+<<<<<<< HEAD
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Titch/Pods-Titch-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BB28B39D2D8D20CC0317196B /* [CP] Copy Pods Resources */ = {
+=======
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C7E5D7C915794930F168A13E /* [CP] Copy Pods Resources */ = {
+>>>>>>> origin/master
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -478,7 +547,11 @@
 		};
 		514D437B1D3CD93300218F9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+<<<<<<< HEAD
 			baseConfigurationReference = 24DA459001E7CE79E197B902 /* Pods-Titch.debug.xcconfig */;
+=======
+			baseConfigurationReference = 9FE702BB4EFBF4E2BE0BBBEF /* Pods-Titch.debug.xcconfig */;
+>>>>>>> origin/master
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Tich/Info.plist;
@@ -490,7 +563,11 @@
 		};
 		514D437C1D3CD93300218F9B /* Release */ = {
 			isa = XCBuildConfiguration;
+<<<<<<< HEAD
 			baseConfigurationReference = B9E863045FFF3DCE0C0A4D59 /* Pods-Titch.release.xcconfig */;
+=======
+			baseConfigurationReference = 9B8E49C9806F395447A2106E /* Pods-Titch.release.xcconfig */;
+>>>>>>> origin/master
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Tich/Info.plist;
