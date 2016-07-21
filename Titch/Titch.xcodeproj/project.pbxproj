@@ -16,7 +16,6 @@
 		51FAB1B71D3E9AD000635172 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51FAB1B51D3E9AD000635172 /* LaunchScreen.storyboard */; };
 		51FAB1C21D3E9AD000635172 /* TitchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FAB1C11D3E9AD000635172 /* TitchTests.swift */; };
 		51FAB1CD1D3E9AD000635172 /* TitchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FAB1CC1D3E9AD000635172 /* TitchUITests.swift */; };
-		810D06171D40FAA400AE247E /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810D06161D40FAA400AE247E /* Functions.swift */; };
 		CBD9BD351109112781A4A565 /* Pods_Titch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76D60E31016A46F5F4683F0C /* Pods_Titch.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +53,6 @@
 		51FAB1CC1D3E9AD000635172 /* TitchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitchUITests.swift; sourceTree = "<group>"; };
 		51FAB1CE1D3E9AD000635172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76D60E31016A46F5F4683F0C /* Pods_Titch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Titch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		810D06161D40FAA400AE247E /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		BC9A987E19272AE9CFFDB1BB /* Pods-Titch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Titch.release.xcconfig"; path = "Pods/Target Support Files/Pods-Titch/Pods-Titch.release.xcconfig"; sourceTree = "<group>"; };
 		FC2967296A88249BC41830DE /* Pods-Titch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Titch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Titch/Pods-Titch.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,7 +131,6 @@
 				51FAB1B31D3E9AD000635172 /* Assets.xcassets */,
 				51FAB1B51D3E9AD000635172 /* LaunchScreen.storyboard */,
 				51FAB1B81D3E9AD000635172 /* Info.plist */,
-				810D06161D40FAA400AE247E /* Functions.swift */,
 			);
 			path = Titch;
 			sourceTree = "<group>";
@@ -351,7 +348,6 @@
 				51B7D1AA1D3FDF5200C23E64 /* HomeController.swift in Sources */,
 				51FAB1AD1D3E9AD000635172 /* AppDelegate.swift in Sources */,
 				518F820B1D3E9D65002A39C1 /* LoginController.swift in Sources */,
-				810D06171D40FAA400AE247E /* Functions.swift in Sources */,
 				518F820D1D3E9D7C002A39C1 /* SignUpController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

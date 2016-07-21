@@ -44,23 +44,31 @@ class SignUpController: UIViewController {
                 "mail": self.emailInput.text!,
                 "password": self.passwordInput.text!
             ]
-            Alamofire.request(.POST, "http://symfonyios.cloudapp.net/signup", parameters: parameters)
+            
+            /*let PostSignUpRequest = Alamofire.request(.POST, "http://symfonyios.cloudapp.net/signup", parameters: parameters)
+                .validate()
+            
+            PostSignUpRequest.responseJSON(PostSignUpRequest,
+            )*/
+            /*Alamofire.request(.POST, "http://symfonyios.cloudapp.net/signup", parameters: parameters)
                 .validate()
                 .responseJSON { response in
+                    
+                    print(response.request)  // original URL request
+                    print(response.response) // URL response
+                    print(response.data)     // server data
+                    print(response.result)   // result of response serialization
+
                     if (response.result.value != nil) {
                         debugPrint(response.result.value)
                         let json = JSON(response.result.value!)
                         let login = json["login"].stringValue
                         print("Le login : \(login)")
-                        let text = "L'utilisateur " + login + " a été créé."
-                        print(text)
-                        //LoginController.toastThis(text)
-                        self.performSegueWithIdentifier("OnSignedUp", sender: self)
                     }
                     else {
                         self.view.makeToast("L'utilisateur ou l'email est déjà utilisé.")
                     }
-            }
+            }*/
         }
         else {
             self.view.makeToast("Veuillez remplir tous les champs.")
