@@ -12,13 +12,12 @@ import Material
 class ViewController: UIViewController {
 
     @IBOutlet weak var Identifiant: TextField!
-    
-   
     @IBOutlet weak var MotDePasse: TextField!
-    
     @IBOutlet weak var BttConnexion: FlatButton!
-    
     @IBOutlet weak var BttInscription: RaisedButton!
+    
+    
+    
     @IBAction func Connexion(sender: UIButton) {
         performSegueWithIdentifier("nextview", sender: self)
     }

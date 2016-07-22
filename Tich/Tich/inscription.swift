@@ -17,13 +17,11 @@ class InscriptionController: UIViewController {
     }
     
     @IBOutlet weak var InputEmail: TextField!
-    
     @IBOutlet weak var InputMdp1: TextField!
     @IBOutlet weak var Mdp2: TextField!
-    
     @IBOutlet weak var Retour: RaisedButton!
     @IBOutlet weak var bttInscrip: RaisedButton!
-    
+   // @IBOutlet weak var back7: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -36,8 +34,6 @@ class InscriptionController: UIViewController {
         // Dispose of any resources that can be recreated.
       
     }
-    
-    
     
     private func prepareStyle() {
         // style input email

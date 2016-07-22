@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A0D28F91D3E6C4000F03A9A /* inscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D28F81D3E6C4000F03A9A /* inscription.swift */; };
+		1A0E2F331D4282660088BAFE /* BoardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0E2F321D4282660088BAFE /* BoardController.swift */; };
 		514D43561D3CD93300218F9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514D43551D3CD93300218F9B /* AppDelegate.swift */; };
 		514D43581D3CD93300218F9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514D43571D3CD93300218F9B /* ViewController.swift */; };
 		514D435B1D3CD93300218F9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 514D43591D3CD93300218F9B /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		1A0D28F81D3E6C4000F03A9A /* inscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = inscription.swift; sourceTree = "<group>"; };
+		1A0E2F321D4282660088BAFE /* BoardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardController.swift; sourceTree = "<group>"; };
 		1C84C9C200F6A56F59FB9EFA /* Pods_Titch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Titch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24DA459001E7CE79E197B902 /* Pods-Titch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Titch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Titch/Pods-Titch.debug.xcconfig"; sourceTree = "<group>"; };
 		514D43521D3CD93300218F9B /* Titch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Titch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +111,7 @@
 				514D43551D3CD93300218F9B /* AppDelegate.swift */,
 				1A0D28F81D3E6C4000F03A9A /* inscription.swift */,
 				514D43571D3CD93300218F9B /* ViewController.swift */,
+				1A0E2F321D4282660088BAFE /* BoardController.swift */,
 				514D43591D3CD93300218F9B /* Main.storyboard */,
 				514D435C1D3CD93300218F9B /* Assets.xcassets */,
 				514D435E1D3CD93300218F9B /* LaunchScreen.storyboard */,
@@ -334,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A0E2F331D4282660088BAFE /* BoardController.swift in Sources */,
 				514D43581D3CD93300218F9B /* ViewController.swift in Sources */,
 				1A0D28F91D3E6C4000F03A9A /* inscription.swift in Sources */,
 				514D43561D3CD93300218F9B /* AppDelegate.swift in Sources */,
