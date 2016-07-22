@@ -174,25 +174,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zM1-qQ-ZLW">
-                                <rect key="frame" x="68" y="113" width="512" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zM1-qQ-ZLW">
+                                <rect key="frame" x="68" y="113" width="288" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCb-of-S6H">
-                                <rect key="frame" x="68" y="142" width="512" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCb-of-S6H">
+                                <rect key="frame" x="68" y="142" width="288" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMd-jP-7jA">
-                                <rect key="frame" x="68" y="171" width="512" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMd-jP-7jA">
+                                <rect key="frame" x="68" y="171" width="288" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecv-VP-SfX">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecv-VP-SfX">
                                 <rect key="frame" x="68" y="285" width="48" height="30"/>
                                 <state key="normal" title="Modify"/>
                                 <connections>
@@ -201,24 +201,61 @@
                                     </segue>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Mf-Xu-gCr">
-                                <rect key="frame" x="68" y="200" width="512" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Mf-Xu-gCr">
+                                <rect key="frame" x="68" y="200" width="288" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Do-2q-1h4">
-                                <rect key="frame" x="68" y="229" width="512" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Do-2q-1h4">
+                                <rect key="frame" x="68" y="229" width="288" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="moJ-SW-YGI">
-                                <rect key="frame" x="244" y="562" width="112" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="moJ-SW-YGI">
+                                <rect key="frame" x="244" y="544" width="112" height="30"/>
                                 <state key="normal" title="Bouton de david"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QJb-Yt-3w1">
+                                <rect key="frame" x="394" y="86" width="186" height="214"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7y-xC-x3f">
+                                <rect key="frame" x="464" y="308" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="uploadImage:" destination="bGy-TD-RNE" eventType="touchUpInside" id="bOk-eb-HMT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wKN-Ab-gFs" firstAttribute="top" secondItem="moJ-SW-YGI" secondAttribute="bottom" constant="26" id="5U7-kx-m9X"/>
+                            <constraint firstItem="QJb-Yt-3w1" firstAttribute="top" secondItem="NPU-A0-bSl" secondAttribute="bottom" constant="22" id="9Pb-pb-lvs"/>
+                            <constraint firstItem="2Mf-Xu-gCr" firstAttribute="leading" secondItem="7Do-2q-1h4" secondAttribute="leading" id="A8X-hC-SQK"/>
+                            <constraint firstItem="wCb-of-S6H" firstAttribute="trailing" secondItem="rMd-jP-7jA" secondAttribute="trailing" id="G9w-Se-bSn"/>
+                            <constraint firstItem="wKN-Ab-gFs" firstAttribute="top" secondItem="QJb-Yt-3w1" secondAttribute="bottom" constant="300" id="I8N-8n-IpZ"/>
+                            <constraint firstItem="rMd-jP-7jA" firstAttribute="top" secondItem="wCb-of-S6H" secondAttribute="bottom" constant="8" symbolic="YES" id="JTd-vV-iBU"/>
+                            <constraint firstItem="QJb-Yt-3w1" firstAttribute="trailing" secondItem="h4d-Jj-NYz" secondAttribute="trailingMargin" id="K4X-Q9-lmI"/>
+                            <constraint firstItem="rMd-jP-7jA" firstAttribute="trailing" secondItem="2Mf-Xu-gCr" secondAttribute="trailing" id="MBm-lg-8au"/>
+                            <constraint firstItem="ecv-VP-SfX" firstAttribute="centerY" secondItem="h4d-Jj-NYz" secondAttribute="centerY" id="TQI-Q2-qV3"/>
+                            <constraint firstItem="zM1-qQ-ZLW" firstAttribute="leading" secondItem="wCb-of-S6H" secondAttribute="leading" id="Tw1-1a-uvA"/>
+                            <constraint firstItem="wCb-of-S6H" firstAttribute="top" secondItem="zM1-qQ-ZLW" secondAttribute="bottom" constant="8" symbolic="YES" id="Uee-oC-PVI"/>
+                            <constraint firstItem="zM1-qQ-ZLW" firstAttribute="leading" secondItem="h4d-Jj-NYz" secondAttribute="leadingMargin" constant="48" id="Ugf-yP-lvs"/>
+                            <constraint firstItem="wCb-of-S6H" firstAttribute="leading" secondItem="rMd-jP-7jA" secondAttribute="leading" id="Xd2-41-Ybr"/>
+                            <constraint firstItem="7Do-2q-1h4" firstAttribute="top" secondItem="2Mf-Xu-gCr" secondAttribute="bottom" constant="8" symbolic="YES" id="Y1P-YM-mPr"/>
+                            <constraint firstItem="zM1-qQ-ZLW" firstAttribute="trailing" secondItem="wCb-of-S6H" secondAttribute="trailing" id="YYl-HM-KvI"/>
+                            <constraint firstItem="moJ-SW-YGI" firstAttribute="centerX" secondItem="h4d-Jj-NYz" secondAttribute="centerX" id="a4n-iO-Anu"/>
+                            <constraint firstItem="O7y-xC-x3f" firstAttribute="centerX" secondItem="QJb-Yt-3w1" secondAttribute="centerX" id="atA-4j-ekB"/>
+                            <constraint firstItem="7Do-2q-1h4" firstAttribute="trailing" secondItem="moJ-SW-YGI" secondAttribute="trailing" id="dKJ-Bb-H12"/>
+                            <constraint firstItem="rMd-jP-7jA" firstAttribute="leading" secondItem="2Mf-Xu-gCr" secondAttribute="leading" id="eBh-wO-kt4"/>
+                            <constraint firstItem="ecv-VP-SfX" firstAttribute="top" secondItem="7Do-2q-1h4" secondAttribute="bottom" constant="35" id="iga-XS-cVc"/>
+                            <constraint firstItem="7Do-2q-1h4" firstAttribute="leading" secondItem="ecv-VP-SfX" secondAttribute="leading" id="k4a-Ma-3YH"/>
+                            <constraint firstItem="2Mf-Xu-gCr" firstAttribute="top" secondItem="rMd-jP-7jA" secondAttribute="bottom" constant="8" symbolic="YES" id="ljY-37-xPZ"/>
+                            <constraint firstItem="2Mf-Xu-gCr" firstAttribute="trailing" secondItem="7Do-2q-1h4" secondAttribute="trailing" id="mhE-8p-H47"/>
+                            <constraint firstItem="QJb-Yt-3w1" firstAttribute="leading" secondItem="zM1-qQ-ZLW" secondAttribute="trailing" constant="38" id="nVo-28-zj5"/>
+                            <constraint firstItem="O7y-xC-x3f" firstAttribute="top" secondItem="QJb-Yt-3w1" secondAttribute="bottom" constant="8" symbolic="YES" id="v9g-nX-cgq"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dCx-7X-I0J">
                         <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="b5n-GQ-n67">
@@ -233,6 +270,7 @@
                         <outlet property="firstnameText" destination="2Mf-Xu-gCr" id="1QN-9l-ubB"/>
                         <outlet property="genderText" destination="rMd-jP-7jA" id="Fha-5Z-H43"/>
                         <outlet property="lastnameText" destination="7Do-2q-1h4" id="IWJ-u8-KIQ"/>
+                        <outlet property="profilePicture" destination="QJb-Yt-3w1" id="IcC-Qe-gdW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cLl-03-ofR" userLabel="First Responder" sceneMemberID="firstResponder"/>

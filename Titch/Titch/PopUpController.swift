@@ -28,10 +28,11 @@ class PopUpController: UIViewController {
             "age": ageV!,
             "gender": genderV
         ]
-        print(headers)
-        print(parameters)
         Alamofire.request(.PUT, "http://symfonyios.cloudapp.net/api/user/update", headers: headers,parameters: parameters)
         .validate()
-        dismissViewControllerAnimated(true, completion: nil)
+        .response { response in
+            NSNotificationCenter.defaultCenter().postNotificationName("refresh", object: nil, userInfo: nil)
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
     }
 }

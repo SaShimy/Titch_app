@@ -32,10 +32,9 @@ class LoginController: UIViewController {
          .validate()
          .responseJSON { response in
             if (response.result.value != nil) {
-                debugPrint(response.result.value)
                 let json = JSON(response.result.value!)
                 token = json["access_token"].stringValue
-                print("Le token : \(token)")
+                print(token)
                 self.performSegueWithIdentifier("OnConnect", sender: self)
             }
             else {
