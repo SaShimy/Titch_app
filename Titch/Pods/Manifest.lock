@@ -1,0 +1,34 @@
+PODS:
+  - Alamofire (3.4.1)
+  - AlamofireImage (2.4.1):
+    - Alamofire (~> 3.3)
+  - Material (1.42.7)
+  - SwiftyJSON (2.3.2)
+  - Toast-Swift (1.3.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.4)
+  - AlamofireImage (~> 2.0)
+  - Material (~> 1.0)
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
+  - Toast-Swift (~> 1.3.0)
+
+EXTERNAL SOURCES:
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  SwiftyJSON:
+    :commit: 73670b94292b8d8496c398a973f56ac67789ba9f
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+SPEC CHECKSUMS:
+  Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  AlamofireImage: 3ccf3347d9ea24580dc11fb892770a0be6a29826
+  Material: 2d46a44719b1f19e52956518af8aea54ac714963
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+  Toast-Swift: 25c3d98db42dc70d9a77b5006ee000e0becb458e
+
+PODFILE CHECKSUM: 054d4eb692a127c17f09583c991f1d49701540aa
+
+COCOAPODS: 1.0.1

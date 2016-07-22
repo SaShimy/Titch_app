@@ -14,6 +14,8 @@
 		51C43A741D428C7D0010967C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51C43A721D428C7D0010967C /* LaunchScreen.storyboard */; };
 		51C43A7F1D428C7D0010967C /* TitchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C43A7E1D428C7D0010967C /* TitchTests.swift */; };
 		51C43A8A1D428C7D0010967C /* TitchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C43A891D428C7D0010967C /* TitchUITests.swift */; };
+		51C43A9B1D4291C30010967C /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C43A9A1D4291C30010967C /* SignUpController.swift */; };
+		E2562BF5EEC6D02C89CEF570 /* Pods_Titch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E5042D531BC2A86173FC4B2 /* Pods_Titch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,10 @@
 		51C43A851D428C7D0010967C /* TitchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TitchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51C43A891D428C7D0010967C /* TitchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitchUITests.swift; sourceTree = "<group>"; };
 		51C43A8B1D428C7D0010967C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51C43A9A1D4291C30010967C /* SignUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		8E5042D531BC2A86173FC4B2 /* Pods_Titch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Titch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EC3930A210072B1A85233A1 /* Pods-Titch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Titch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Titch/Pods-Titch.debug.xcconfig"; sourceTree = "<group>"; };
+		D7CB66B6C2509137D98A5B52 /* Pods-Titch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Titch.release.xcconfig"; path = "Pods/Target Support Files/Pods-Titch/Pods-Titch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2562BF5EEC6D02C89CEF570 /* Pods_Titch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		003FD4F9BA59D14BCD2119B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E5042D531BC2A86173FC4B2 /* Pods_Titch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		51C43A5D1D428C7D0010967C = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +96,8 @@
 				51C43A7D1D428C7D0010967C /* TitchTests */,
 				51C43A881D428C7D0010967C /* TitchUITests */,
 				51C43A671D428C7D0010967C /* Products */,
+				8CAFA29B81E1F6E6F1FEB7A8 /* Pods */,
+				003FD4F9BA59D14BCD2119B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +114,8 @@
 		51C43A681D428C7D0010967C /* Titch */ = {
 			isa = PBXGroup;
 			children = (
+				51C43A971D428D740010967C /* ViewControllers */,
 				51C43A691D428C7D0010967C /* AppDelegate.swift */,
-				51C43A6B1D428C7D0010967C /* LoginController.swift */,
 				51C43A6D1D428C7D0010967C /* Main.storyboard */,
 				51C43A701D428C7D0010967C /* Assets.xcassets */,
 				51C43A721D428C7D0010967C /* LaunchScreen.storyboard */,
@@ -125,6 +142,24 @@
 			path = TitchUITests;
 			sourceTree = "<group>";
 		};
+		51C43A971D428D740010967C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				51C43A9A1D4291C30010967C /* SignUpController.swift */,
+				51C43A6B1D428C7D0010967C /* LoginController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8CAFA29B81E1F6E6F1FEB7A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8EC3930A210072B1A85233A1 /* Pods-Titch.debug.xcconfig */,
+				D7CB66B6C2509137D98A5B52 /* Pods-Titch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +167,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51C43A8E1D428C7D0010967C /* Build configuration list for PBXNativeTarget "Titch" */;
 			buildPhases = (
+				9CB0434C636F4F281BB08F9F /* [CP] Check Pods Manifest.lock */,
 				51C43A621D428C7D0010967C /* Sources */,
 				51C43A631D428C7D0010967C /* Frameworks */,
 				51C43A641D428C7D0010967C /* Resources */,
+				02EFE86DB05956EDB74E8C92 /* [CP] Embed Pods Frameworks */,
+				9467C15CF626C4252336B1F0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,6 +289,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02EFE86DB05956EDB74E8C92 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Titch/Pods-Titch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9467C15CF626C4252336B1F0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Titch/Pods-Titch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CB0434C636F4F281BB08F9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		51C43A621D428C7D0010967C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -258,6 +344,7 @@
 			files = (
 				51C43A6C1D428C7D0010967C /* LoginController.swift in Sources */,
 				51C43A6A1D428C7D0010967C /* AppDelegate.swift in Sources */,
+				51C43A9B1D4291C30010967C /* SignUpController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +486,7 @@
 		};
 		51C43A8F1D428C7D0010967C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EC3930A210072B1A85233A1 /* Pods-Titch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Titch/Info.plist;
@@ -410,6 +498,7 @@
 		};
 		51C43A901D428C7D0010967C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7CB66B6C2509137D98A5B52 /* Pods-Titch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Titch/Info.plist;
@@ -484,6 +573,7 @@
 				51C43A901D428C7D0010967C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51C43A911D428C7D0010967C /* Build configuration list for PBXNativeTarget "TitchTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +582,7 @@
 				51C43A931D428C7D0010967C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51C43A941D428C7D0010967C /* Build configuration list for PBXNativeTarget "TitchUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +591,7 @@
 				51C43A961D428C7D0010967C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
