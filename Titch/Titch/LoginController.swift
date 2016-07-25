@@ -39,7 +39,7 @@ class LoginController: UIViewController {
                 self.performSegueWithIdentifier("OnConnect", sender: self)
             }
             else {
-                self.view.makeToast("Le mot de passe ou l'utilisateur ne sont pas corrects.")
+                self.view.makeToast("L'email ou le mot de passe n'est pas corrects.")
             }
         }
     }
