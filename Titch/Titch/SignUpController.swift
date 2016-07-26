@@ -53,7 +53,6 @@ class SignUpController: UIViewController {
 
     }
     
-    @IBOutlet weak var Retour: RaisedButton!
     @IBOutlet weak var InputEmail: TextField!
     @IBOutlet weak var InputMdp1: TextField!
     @IBOutlet weak var Mdp2: TextField!
@@ -96,10 +95,6 @@ class SignUpController: UIViewController {
         bttInscrip.setTitleColor(MaterialColor.blue.base, forState: .Normal)
         bttInscrip.pulseColor = MaterialColor.blue.base
         
-        
-        let img: UIImage? = MaterialIcon.cm.arrowBack
-        Retour.setImage(img, forState: .Normal)
-        Retour.setImage(img, forState: .Highlighted)
         
     }
 

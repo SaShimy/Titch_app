@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Gbd-ds-L5C">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UVr-2r-1X2">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -62,7 +62,7 @@
                                 </constraints>
                                 <state key="normal" title="Inscription"/>
                                 <connections>
-                                    <action selector="Inscript:" destination="Gbd-ds-L5C" eventType="touchUpInside" id="9SY-tq-Put"/>
+                                    <segue destination="vcU-fr-IWY" kind="show" id="3mf-Fu-aVg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -86,12 +86,27 @@
                         <outlet property="BttInscription" destination="aGj-Sh-jck" id="4cB-cz-16c"/>
                         <outlet property="Identifiant" destination="NpB-Rr-MGZ" id="b00-nU-nwZ"/>
                         <outlet property="MotDePasse" destination="ufK-qs-8Q6" id="E0u-C7-0cT"/>
-                        <segue destination="vcU-fr-IWY" kind="show" identifier="OnSignUp" id="Jhi-s9-qAY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pO2-kG-L9U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-515" y="280"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="EFl-fl-l7y">
+            <objects>
+                <navigationController id="UVr-2r-1X2" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Tkz-6V-h6H">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Gbd-ds-L5C" kind="relationship" relationship="rootViewController" id="XmX-pR-nGD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KaD-Lf-JNY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1264" y="280"/>
         </scene>
         <!--Sign Up Controller-->
         <scene sceneID="Dlg-fu-CEb">
@@ -165,26 +180,24 @@
                     </view>
                     <navigationItem key="navigationItem" id="qmh-iE-kTn">
                         <nil key="title"/>
-                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gAA-Vf-u8e" customClass="RaisedButton" customModule="Material">
-                            <rect key="frame" x="277" y="7" width="46" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        </button>
                     </navigationItem>
                     <connections>
                         <outlet property="InputEmail" destination="Ucs-3c-qyL" id="r0F-BL-Lf2"/>
                         <outlet property="InputMdp1" destination="h6d-ob-BGw" id="j1Y-YE-dcd"/>
                         <outlet property="Mdp2" destination="dbr-XZ-ZC1" id="ulo-rJ-A3y"/>
-                        <outlet property="Retour" destination="gAA-Vf-u8e" id="0Qc-6P-eEy"/>
                         <outlet property="bttInscrip" destination="hOI-Q6-VrQ" id="f3b-Sw-uYh"/>
-                        <segue destination="Gbd-ds-L5C" kind="show" identifier="OnSignedUp" id="HHT-wz-SSw"/>
+                        <segue destination="Gbd-ds-L5C" kind="show" identifier="OnSignedUp" id="Cmf-ii-caP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zXE-wm-aQn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-515" y="1460"/>
+            <point key="canvasLocation" x="-515" y="1180"/>
         </scene>
     </scenes>
     <resources>
         <image name="youboox_appicon_1024" width="1024" height="1024"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Cmf-ii-caP"/>
+    </inferredMetricsTieBreakers>
 </document>

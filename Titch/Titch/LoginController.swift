@@ -45,10 +45,6 @@ class LoginController: UIViewController {
 
     }
     
-    @IBAction func Inscript(sender: AnyObject) {
-        self.performSegueWithIdentifier("OnSignUp", sender: self)
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
