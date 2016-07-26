@@ -29,8 +29,6 @@ class LoginController: UIViewController {
             "username": Identifiant.text!,
             "password": MotDePasse.text!
         ]
-        
-        
         Alamofire.request(.POST, "http://symfonyios.cloudapp.net/oauth/v2/token", parameters: parameters)
             .validate()
             .responseJSON { response in
