@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>AlamofireImage.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>Pods-Titch.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -27,6 +32,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>05094CC4A047119F7ADC14EE74C4881C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>09100197A439DB4353E90AF096FC4440</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>1984BC8F82BCBAFECB6078D106B92B51</key>
 		<dict>
 			<key>primary</key>
@@ -42,7 +57,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>A5A9381F349AD6056FE2AF9A617DC680</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>EA0EE881D966BDFEF5AD8985031F13F5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F6E0C94C89423B433ABE7A71E1F9FB8D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

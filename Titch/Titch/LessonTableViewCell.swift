@@ -11,8 +11,9 @@ import UIKit
 class LessonTableViewCell: UITableViewCell {
 
     @IBOutlet var Title: UILabel!
+
     @IBOutlet var Description: UILabel!
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

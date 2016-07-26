@@ -13,6 +13,7 @@ import Toast_Swift
 
 class LTypeTableViewController: UITableViewController {
     
+
     @IBOutlet var tableV: UITableView!
     
     var types = [TypeLesson]()

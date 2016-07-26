@@ -12,7 +12,6 @@ import Toast_Swift
 
 class LessonTableViewController: UITableViewController {
 
-   
     @IBOutlet var tableV: UITableView!
 
     var name = String()

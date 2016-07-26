@@ -17,6 +17,12 @@
 		51FAB1B71D3E9AD000635172 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51FAB1B51D3E9AD000635172 /* LaunchScreen.storyboard */; };
 		51FAB1C21D3E9AD000635172 /* TitchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FAB1C11D3E9AD000635172 /* TitchTests.swift */; };
 		51FAB1CD1D3E9AD000635172 /* TitchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FAB1CC1D3E9AD000635172 /* TitchUITests.swift */; };
+		810463871D47AE4900EC8CB4 /* LTypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810463861D47AE4900EC8CB4 /* LTypeTableViewController.swift */; };
+		810463891D47AED800EC8CB4 /* TypeLesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810463881D47AED800EC8CB4 /* TypeLesson.swift */; };
+		8104638B1D47AEF300EC8CB4 /* LessonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8104638A1D47AEF300EC8CB4 /* LessonTableViewController.swift */; };
+		8104638D1D47AF0500EC8CB4 /* LTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8104638C1D47AF0500EC8CB4 /* LTypeTableViewCell.swift */; };
+		810463901D47AF3400EC8CB4 /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8104638E1D47AF3400EC8CB4 /* Lesson.swift */; };
+		810463911D47AF3400EC8CB4 /* LessonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8104638F1D47AF3400EC8CB4 /* LessonTableViewCell.swift */; };
 		CBD9BD351109112781A4A565 /* Pods_Titch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76D60E31016A46F5F4683F0C /* Pods_Titch.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,12 +61,12 @@
 		51FAB1CC1D3E9AD000635172 /* TitchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitchUITests.swift; sourceTree = "<group>"; };
 		51FAB1CE1D3E9AD000635172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76D60E31016A46F5F4683F0C /* Pods_Titch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Titch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		810D061C1D411E0400AE247E /* LessonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonTableViewCell.swift; sourceTree = "<group>"; };
-		810D06201D4121B800AE247E /* LessonTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonTableViewController.swift; sourceTree = "<group>"; };
-		810D06241D41246A00AE247E /* Lesson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
-		810D06261D42848200AE247E /* LTypeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTypeTableViewController.swift; sourceTree = "<group>"; };
-		810D06281D42852C00AE247E /* LTypeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTypeTableViewCell.swift; sourceTree = "<group>"; };
-		810D062A1D428F9B00AE247E /* TypeLesson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeLesson.swift; sourceTree = "<group>"; };
+		810463861D47AE4900EC8CB4 /* LTypeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTypeTableViewController.swift; sourceTree = "<group>"; };
+		810463881D47AED800EC8CB4 /* TypeLesson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeLesson.swift; sourceTree = "<group>"; };
+		8104638A1D47AEF300EC8CB4 /* LessonTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonTableViewController.swift; sourceTree = "<group>"; };
+		8104638C1D47AF0500EC8CB4 /* LTypeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTypeTableViewCell.swift; sourceTree = "<group>"; };
+		8104638E1D47AF3400EC8CB4 /* Lesson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
+		8104638F1D47AF3400EC8CB4 /* LessonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonTableViewCell.swift; sourceTree = "<group>"; };
 		BC9A987E19272AE9CFFDB1BB /* Pods-Titch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Titch.release.xcconfig"; path = "Pods/Target Support Files/Pods-Titch/Pods-Titch.release.xcconfig"; sourceTree = "<group>"; };
 		FC2967296A88249BC41830DE /* Pods-Titch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Titch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Titch/Pods-Titch.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,16 +139,16 @@
 		51FAB1AB1D3E9AD000635172 /* Titch */ = {
 			isa = PBXGroup;
 			children = (
+				8104638E1D47AF3400EC8CB4 /* Lesson.swift */,
+				8104638F1D47AF3400EC8CB4 /* LessonTableViewCell.swift */,
+				8104638C1D47AF0500EC8CB4 /* LTypeTableViewCell.swift */,
+				810463881D47AED800EC8CB4 /* TypeLesson.swift */,
 				51FAB1DA1D3E9AD800635172 /* ViewControllers */,
 				51FAB1AC1D3E9AD000635172 /* AppDelegate.swift */,
 				51FAB1B01D3E9AD000635172 /* Main.storyboard */,
 				51FAB1B31D3E9AD000635172 /* Assets.xcassets */,
 				51FAB1B51D3E9AD000635172 /* LaunchScreen.storyboard */,
 				51FAB1B81D3E9AD000635172 /* Info.plist */,
-				810D061C1D411E0400AE247E /* LessonTableViewCell.swift */,
-				810D06241D41246A00AE247E /* Lesson.swift */,
-				810D062A1D428F9B00AE247E /* TypeLesson.swift */,
-				810D06281D42852C00AE247E /* LTypeTableViewCell.swift */,
 			);
 			path = Titch;
 			sourceTree = "<group>";
@@ -168,12 +174,12 @@
 		51FAB1DA1D3E9AD800635172 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8104638A1D47AEF300EC8CB4 /* LessonTableViewController.swift */,
+				810463861D47AE4900EC8CB4 /* LTypeTableViewController.swift */,
 				518F820A1D3E9D65002A39C1 /* LoginController.swift */,
 				518F820C1D3E9D7C002A39C1 /* SignUpController.swift */,
 				51B7D1A91D3FDF5200C23E64 /* HomeController.swift */,
 				513052D81D410579004B1258 /* PopUpController.swift */,
-				810D06201D4121B800AE247E /* LessonTableViewController.swift */,
-				810D06261D42848200AE247E /* LTypeTableViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -360,17 +366,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				810D061D1D411E0400AE247E /* LessonTableViewCell.swift in Sources */,
 				51B7D1AA1D3FDF5200C23E64 /* HomeController.swift in Sources */,
 				51FAB1AD1D3E9AD000635172 /* AppDelegate.swift in Sources */,
+				810463871D47AE4900EC8CB4 /* LTypeTableViewController.swift in Sources */,
+				8104638D1D47AF0500EC8CB4 /* LTypeTableViewCell.swift in Sources */,
 				518F820B1D3E9D65002A39C1 /* LoginController.swift in Sources */,
-				810D06251D41246A00AE247E /* Lesson.swift in Sources */,
-				810D062B1D428F9B00AE247E /* TypeLesson.swift in Sources */,
-				810D06271D42848200AE247E /* LTypeTableViewController.swift in Sources */,
-				810D06291D42852C00AE247E /* LTypeTableViewCell.swift in Sources */,
+				810463901D47AF3400EC8CB4 /* Lesson.swift in Sources */,
 				513052D91D410579004B1258 /* PopUpController.swift in Sources */,
+				810463911D47AF3400EC8CB4 /* LessonTableViewCell.swift in Sources */,
+				8104638B1D47AEF300EC8CB4 /* LessonTableViewController.swift in Sources */,
 				518F820D1D3E9D7C002A39C1 /* SignUpController.swift in Sources */,
-				810D06221D4121B800AE247E /* LessonTableViewController.swift in Sources */,
+				810463891D47AED800EC8CB4 /* TypeLesson.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

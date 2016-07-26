@@ -11,7 +11,7 @@ import UIKit
 class LTypeTableViewCell: UITableViewCell {
     
     @IBOutlet var TypeName: UILabel!
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
