@@ -20,6 +20,7 @@ class LoginController: UIViewController {
     @IBOutlet weak var MotDePasse: TextField!
     @IBOutlet weak var BttConnexion: FlatButton!
     @IBOutlet weak var BttInscription: RaisedButton!
+    let global:NSUserDefaults = NSUserDefaults.standardUserDefaults()
     
     @IBAction func Connexion(sender: UIButton) {
         let parameters = [
@@ -49,6 +50,11 @@ class LoginController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         prepareStyle()
+        if let myString = global.valueForKey("SignedUpEmail") as? String
+        {
+            self.view.makeToast("Le compte avec l'email \(myString) a été créé.")
+            global.removeObjectForKey("SignedUpEmail")
+        }
     }
     
     

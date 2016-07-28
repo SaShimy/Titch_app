@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5158F3371D492B4300B2C9C0 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5158F3361D492B4300B2C9C0 /* ProfileController.swift */; };
+		5158F3391D4A51F400B2C9C0 /* PopOverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5158F3381D4A51F400B2C9C0 /* PopOverController.swift */; };
 		51C43A6A1D428C7D0010967C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C43A691D428C7D0010967C /* AppDelegate.swift */; };
 		51C43A6C1D428C7D0010967C /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C43A6B1D428C7D0010967C /* LoginController.swift */; };
 		51C43A6F1D428C7D0010967C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51C43A6D1D428C7D0010967C /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5158F3361D492B4300B2C9C0 /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		5158F3381D4A51F400B2C9C0 /* PopOverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopOverController.swift; sourceTree = "<group>"; };
 		51C43A661D428C7D0010967C /* Titch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Titch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51C43A691D428C7D0010967C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51C43A6B1D428C7D0010967C /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -150,6 +154,8 @@
 				51C43A9A1D4291C30010967C /* SignUpController.swift */,
 				51C43A6B1D428C7D0010967C /* LoginController.swift */,
 				51CD92721D47DF34007C7B53 /* HomeController.swift */,
+				5158F3361D492B4300B2C9C0 /* ProfileController.swift */,
+				5158F3381D4A51F400B2C9C0 /* PopOverController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -345,8 +351,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5158F3371D492B4300B2C9C0 /* ProfileController.swift in Sources */,
 				51CD92731D47DF34007C7B53 /* HomeController.swift in Sources */,
 				51C43A6C1D428C7D0010967C /* LoginController.swift in Sources */,
+				5158F3391D4A51F400B2C9C0 /* PopOverController.swift in Sources */,
 				51C43A6A1D428C7D0010967C /* AppDelegate.swift in Sources */,
 				51C43A9B1D4291C30010967C /* SignUpController.swift in Sources */,
 			);

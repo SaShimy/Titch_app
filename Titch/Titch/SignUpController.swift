@@ -24,24 +24,24 @@ class SignUpController: UIViewController {
         
         if (pswd == pswd2) {
         
-        if ( email != "" && pswd != "") {
-            let parameters = [
-                "mail": self.InputEmail.text!,
-                "password": self.InputMdp1.text!
-            ]
+            if ( email != "" && pswd != "") {
+                let parameters = [
+                    "mail": self.InputEmail.text!,
+                    "password": self.InputMdp1.text!
+                ]
             
-            Alamofire.request(.POST, "http://symfonyios.cloudapp.net/signup", parameters: parameters)
-                .validate()
-                .responseJSON { response in
-                    if (response.result.value != nil) {
-                        debugPrint(response.result.value)
-                        self.global.setObject(self.InputEmail.text!, forKey:"SignedUpEmail")
-                        self.performSegueWithIdentifier("OnSignedUp", sender: self)
-                    }
-                    else {
-                        self.view.makeToast("L''email est déjà utilisé.")
-                    }
-            }
+                Alamofire.request(.POST, "http://symfonyios.cloudapp.net/signup", parameters: parameters)
+                    .validate()
+                    .responseJSON { response in
+                        if (response.result.value != nil) {
+                            debugPrint(response.result.value)
+                            self.global.setObject(self.InputEmail.text!, forKey:"SignedUpEmail")
+                            self.performSegueWithIdentifier("OnSignedUp", sender: self)
+                        }
+                        else {
+                            self.view.makeToast("L'email est déjà utilisé.")
+                        }
+                }
         }
         else {
             self.view.makeToast("Veuillez remplir tous les champs.")
