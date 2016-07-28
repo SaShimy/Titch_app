@@ -8,24 +8,24 @@
 
 import Foundation
 
-class Lesson {
+class Question {
     // MARK: Properties
     
-    var title: String
-    var desc: String
+    var text: String
     var id: String
-
+    var answers: [Answer]
     
-    init?(title: String, desc: String, id: String) {
+    
+    init?(text: String, id: String, answers: [Answer]) {
         // Initialize stored properties.
-        self.title = title
-        self.desc = desc
+        self.text = text
+        self.answers = answers
         self.id = id
         
         // Initialization should fail if there is no name or if the rating is negative.
-        if title.isEmpty || desc.isEmpty {
+        if text.isEmpty || answers.isEmpty || id.isEmpty{
             return nil
         }
     }
-
+    
 }

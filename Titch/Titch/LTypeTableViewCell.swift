@@ -12,6 +12,8 @@ class LTypeTableViewCell: UITableViewCell {
     
     @IBOutlet var TypeName: UILabel!
     
+    @IBOutlet var Achieved: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

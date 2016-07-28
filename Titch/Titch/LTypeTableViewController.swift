@@ -28,7 +28,6 @@ class LTypeTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         let headers = ["Authorization" : "Bearer " + token]
         
-        print(headers)
         Alamofire.request(.GET, "http://symfonyios.cloudapp.net/api/lesson/type/all", headers: headers)
             .validate()
             .responseJSON { response in
@@ -93,6 +92,20 @@ class LTypeTableViewController: UITableViewController {
         
         let type = types[indexPath.row]
         // Configure the cell...
+        
+        let headers = ["Authorization" : "Bearer " + token]
+        
+        Alamofire.request(.GET, "http://symfonyios.cloudapp.net/api/lesson/type/valid/\(type.id)", headers: headers)
+            .validate()
+            .responseJSON { response in
+                if (response.result.value != nil) {
+                    debugPrint(response.result.value!)
+                    let json = JSON(response.result.value!)
+                    let valid = json["valid"]
+                    let total = json["total"]
+                    cell.Achieved.text = "\(valid)/\(total)"
+                }
+        }
         
         cell.TypeName.text = type.name
         

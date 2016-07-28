@@ -22,29 +22,24 @@ class LessonTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("name")
-        print(name)
-        print("desc")
-        print(desc)
-        print("id")
-        print(id)	
+        print("name \(name)")
+        print("desc \(desc)")
+        print("id \(id)")
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         let headers = ["Authorization" : "Bearer " + token]
-        
-        print(headers)
+
         Alamofire.request(.GET, "http://symfonyios.cloudapp.net/api/lesson/type/one/\(id)", headers: headers)
             .validate()
             .responseJSON { response in
                 if (response.result.value != nil) {
                     debugPrint(response.result.value!)
                     let json = JSON(response.result.value!)
-                    for (_,subJson) in json {
-                        //Do something you want
-                        let lessontmp = Lesson(title: subJson["name"].stringValue, desc: subJson["description"].stringValue)!
+                    for (_,subJson) in json["lessons"] {
+                        let lessontmp = Lesson(title: subJson["name"].stringValue, desc: subJson["description"].stringValue, id: subJson["id"].stringValue)!
                         self.lessons.append(lessontmp)
                     }
                 }
@@ -64,6 +59,21 @@ class LessonTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if  segue.identifier == "LessonVideoView",
+            let destination = segue.destinationViewController as? VideoViewController,
+            blogIndex = tableView.indexPathForSelectedRow?.row
+        {
+            let lesson = lessons[blogIndex]
+            destination.id = lesson.id
+        }
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        //CODE TO BE RUN ON CELL TOUCH
+        self.performSegueWithIdentifier("LessonVideoView", sender: self)
+    }
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
        return 1

@@ -6,28 +6,33 @@
 	<dict>
 		<key>Alamofire.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>AlamofireImage.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>DLRadioButton.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-Titch.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>SwiftyJSON.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Toast-Swift.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -37,17 +42,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>09100197A439DB4353E90AF096FC4440</key>
+		<key>1A5135496F53F2A25BF73B5AF69ECA3B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1984BC8F82BCBAFECB6078D106B92B51</key>
+		<key>5567D9118705D8D05C1CAF018C289570</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>35A7CF57ED8E1969F333D3A12F93A654</key>
+		<key>5952F943D32656CE2C6666943125FA8E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -57,17 +62,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A5A9381F349AD6056FE2AF9A617DC680</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EA0EE881D966BDFEF5AD8985031F13F5</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F6E0C94C89423B433ABE7A71E1F9FB8D</key>
+		<key>F3990E3EAC160D4E4F89177D966FC1E9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

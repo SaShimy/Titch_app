@@ -23,6 +23,10 @@
 		8104638D1D47AF0500EC8CB4 /* LTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8104638C1D47AF0500EC8CB4 /* LTypeTableViewCell.swift */; };
 		810463901D47AF3400EC8CB4 /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8104638E1D47AF3400EC8CB4 /* Lesson.swift */; };
 		810463911D47AF3400EC8CB4 /* LessonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8104638F1D47AF3400EC8CB4 /* LessonTableViewCell.swift */; };
+		810463931D47B9C200EC8CB4 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810463921D47B9C200EC8CB4 /* VideoViewController.swift */; };
+		810463951D47BEC800EC8CB4 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810463941D47BEC800EC8CB4 /* Answer.swift */; };
+		810463971D47C3BB00EC8CB4 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810463961D47C3BB00EC8CB4 /* Question.swift */; };
+		816CD2B91D48C02F0044EF15 /* QuizController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816CD2B81D48C02F0044EF15 /* QuizController.swift */; };
 		CBD9BD351109112781A4A565 /* Pods_Titch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76D60E31016A46F5F4683F0C /* Pods_Titch.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +71,10 @@
 		8104638C1D47AF0500EC8CB4 /* LTypeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTypeTableViewCell.swift; sourceTree = "<group>"; };
 		8104638E1D47AF3400EC8CB4 /* Lesson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
 		8104638F1D47AF3400EC8CB4 /* LessonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonTableViewCell.swift; sourceTree = "<group>"; };
+		810463921D47B9C200EC8CB4 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		810463941D47BEC800EC8CB4 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		810463961D47C3BB00EC8CB4 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		816CD2B81D48C02F0044EF15 /* QuizController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizController.swift; sourceTree = "<group>"; };
 		BC9A987E19272AE9CFFDB1BB /* Pods-Titch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Titch.release.xcconfig"; path = "Pods/Target Support Files/Pods-Titch/Pods-Titch.release.xcconfig"; sourceTree = "<group>"; };
 		FC2967296A88249BC41830DE /* Pods-Titch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Titch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Titch/Pods-Titch.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,6 +147,8 @@
 		51FAB1AB1D3E9AD000635172 /* Titch */ = {
 			isa = PBXGroup;
 			children = (
+				810463941D47BEC800EC8CB4 /* Answer.swift */,
+				810463961D47C3BB00EC8CB4 /* Question.swift */,
 				8104638E1D47AF3400EC8CB4 /* Lesson.swift */,
 				8104638F1D47AF3400EC8CB4 /* LessonTableViewCell.swift */,
 				8104638C1D47AF0500EC8CB4 /* LTypeTableViewCell.swift */,
@@ -174,12 +184,14 @@
 		51FAB1DA1D3E9AD800635172 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				810463921D47B9C200EC8CB4 /* VideoViewController.swift */,
 				8104638A1D47AEF300EC8CB4 /* LessonTableViewController.swift */,
 				810463861D47AE4900EC8CB4 /* LTypeTableViewController.swift */,
 				518F820A1D3E9D65002A39C1 /* LoginController.swift */,
 				518F820C1D3E9D7C002A39C1 /* SignUpController.swift */,
 				51B7D1A91D3FDF5200C23E64 /* HomeController.swift */,
 				513052D81D410579004B1258 /* PopUpController.swift */,
+				816CD2B81D48C02F0044EF15 /* QuizController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -368,10 +380,14 @@
 			files = (
 				51B7D1AA1D3FDF5200C23E64 /* HomeController.swift in Sources */,
 				51FAB1AD1D3E9AD000635172 /* AppDelegate.swift in Sources */,
+				816CD2B91D48C02F0044EF15 /* QuizController.swift in Sources */,
+				810463931D47B9C200EC8CB4 /* VideoViewController.swift in Sources */,
 				810463871D47AE4900EC8CB4 /* LTypeTableViewController.swift in Sources */,
 				8104638D1D47AF0500EC8CB4 /* LTypeTableViewCell.swift in Sources */,
+				810463971D47C3BB00EC8CB4 /* Question.swift in Sources */,
 				518F820B1D3E9D65002A39C1 /* LoginController.swift in Sources */,
 				810463901D47AF3400EC8CB4 /* Lesson.swift in Sources */,
+				810463951D47BEC800EC8CB4 /* Answer.swift in Sources */,
 				513052D91D410579004B1258 /* PopUpController.swift in Sources */,
 				810463911D47AF3400EC8CB4 /* LessonTableViewCell.swift in Sources */,
 				8104638B1D47AEF300EC8CB4 /* LessonTableViewController.swift in Sources */,
