@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51189CF61D4A5C90000B2636 /* ClassTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51189CF51D4A5C90000B2636 /* ClassTableController.swift */; };
+		51189CFB1D4A5D08000B2636 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51189CF71D4A5D08000B2636 /* Answer.swift */; };
+		51189CFC1D4A5D08000B2636 /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51189CF81D4A5D08000B2636 /* Lesson.swift */; };
+		51189CFD1D4A5D08000B2636 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51189CF91D4A5D08000B2636 /* Question.swift */; };
+		51189CFE1D4A5D08000B2636 /* TypeLesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51189CFA1D4A5D08000B2636 /* TypeLesson.swift */; };
+		51189D001D4A5D5D000B2636 /* LessonTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51189CFF1D4A5D5D000B2636 /* LessonTableController.swift */; };
+		51189D031D4A5DB2000B2636 /* LessonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51189D011D4A5DB2000B2636 /* LessonTableViewCell.swift */; };
+		51189D041D4A5DB2000B2636 /* LTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51189D021D4A5DB2000B2636 /* LTypeTableViewCell.swift */; };
+		51189D091D4A5E3E000B2636 /* QuizController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51189D071D4A5E3E000B2636 /* QuizController.swift */; };
+		51189D0A1D4A5E3E000B2636 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51189D081D4A5E3E000B2636 /* VideoViewController.swift */; };
 		5158F3371D492B4300B2C9C0 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5158F3361D492B4300B2C9C0 /* ProfileController.swift */; };
 		5158F3391D4A51F400B2C9C0 /* PopOverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5158F3381D4A51F400B2C9C0 /* PopOverController.swift */; };
 		51C43A6A1D428C7D0010967C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C43A691D428C7D0010967C /* AppDelegate.swift */; };
@@ -39,6 +49,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		51189CF51D4A5C90000B2636 /* ClassTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassTableController.swift; sourceTree = "<group>"; };
+		51189CF71D4A5D08000B2636 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		51189CF81D4A5D08000B2636 /* Lesson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
+		51189CF91D4A5D08000B2636 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		51189CFA1D4A5D08000B2636 /* TypeLesson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeLesson.swift; sourceTree = "<group>"; };
+		51189CFF1D4A5D5D000B2636 /* LessonTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonTableController.swift; sourceTree = "<group>"; };
+		51189D011D4A5DB2000B2636 /* LessonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonTableViewCell.swift; sourceTree = "<group>"; };
+		51189D021D4A5DB2000B2636 /* LTypeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTypeTableViewCell.swift; sourceTree = "<group>"; };
+		51189D071D4A5E3E000B2636 /* QuizController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizController.swift; sourceTree = "<group>"; };
+		51189D081D4A5E3E000B2636 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		5158F3361D492B4300B2C9C0 /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		5158F3381D4A51F400B2C9C0 /* PopOverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopOverController.swift; sourceTree = "<group>"; };
 		51C43A661D428C7D0010967C /* Titch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Titch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +115,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		51189D051D4A5DBA000B2636 /* CellControllers */ = {
+			isa = PBXGroup;
+			children = (
+				51189D011D4A5DB2000B2636 /* LessonTableViewCell.swift */,
+				51189D021D4A5DB2000B2636 /* LTypeTableViewCell.swift */,
+			);
+			name = CellControllers;
+			sourceTree = "<group>";
+		};
+		51189D061D4A5DD4000B2636 /* Objets */ = {
+			isa = PBXGroup;
+			children = (
+				51189CF71D4A5D08000B2636 /* Answer.swift */,
+				51189CF81D4A5D08000B2636 /* Lesson.swift */,
+				51189CF91D4A5D08000B2636 /* Question.swift */,
+				51189CFA1D4A5D08000B2636 /* TypeLesson.swift */,
+			);
+			name = Objets;
+			sourceTree = "<group>";
+		};
 		51C43A5D1D428C7D0010967C = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +160,8 @@
 		51C43A681D428C7D0010967C /* Titch */ = {
 			isa = PBXGroup;
 			children = (
+				51189D061D4A5DD4000B2636 /* Objets */,
+				51189D051D4A5DBA000B2636 /* CellControllers */,
 				51C43A971D428D740010967C /* ViewControllers */,
 				51C43A691D428C7D0010967C /* AppDelegate.swift */,
 				51C43A6D1D428C7D0010967C /* Main.storyboard */,
@@ -151,11 +193,15 @@
 		51C43A971D428D740010967C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				51189D071D4A5E3E000B2636 /* QuizController.swift */,
+				51189D081D4A5E3E000B2636 /* VideoViewController.swift */,
 				51C43A9A1D4291C30010967C /* SignUpController.swift */,
 				51C43A6B1D428C7D0010967C /* LoginController.swift */,
 				51CD92721D47DF34007C7B53 /* HomeController.swift */,
 				5158F3361D492B4300B2C9C0 /* ProfileController.swift */,
 				5158F3381D4A51F400B2C9C0 /* PopOverController.swift */,
+				51189CF51D4A5C90000B2636 /* ClassTableController.swift */,
+				51189CFF1D4A5D5D000B2636 /* LessonTableController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -351,12 +397,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51189D031D4A5DB2000B2636 /* LessonTableViewCell.swift in Sources */,
+				51189CFC1D4A5D08000B2636 /* Lesson.swift in Sources */,
+				51189D091D4A5E3E000B2636 /* QuizController.swift in Sources */,
 				5158F3371D492B4300B2C9C0 /* ProfileController.swift in Sources */,
+				51189D001D4A5D5D000B2636 /* LessonTableController.swift in Sources */,
+				51189D041D4A5DB2000B2636 /* LTypeTableViewCell.swift in Sources */,
 				51CD92731D47DF34007C7B53 /* HomeController.swift in Sources */,
 				51C43A6C1D428C7D0010967C /* LoginController.swift in Sources */,
 				5158F3391D4A51F400B2C9C0 /* PopOverController.swift in Sources */,
+				51189CFE1D4A5D08000B2636 /* TypeLesson.swift in Sources */,
+				51189D0A1D4A5E3E000B2636 /* VideoViewController.swift in Sources */,
+				51189CFD1D4A5D08000B2636 /* Question.swift in Sources */,
+				51189CF61D4A5C90000B2636 /* ClassTableController.swift in Sources */,
 				51C43A6A1D428C7D0010967C /* AppDelegate.swift in Sources */,
 				51C43A9B1D4291C30010967C /* SignUpController.swift in Sources */,
+				51189CFB1D4A5D08000B2636 /* Answer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

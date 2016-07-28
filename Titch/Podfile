@@ -8,4 +8,5 @@ target "Titch" do
     pod 'AlamofireImage', '~> 2.0'
     pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
     pod 'Toast-Swift', '~> 1.3.0'
+    pod 'DLRadioButton', '~> 1.4'
 end
