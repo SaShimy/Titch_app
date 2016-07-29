@@ -889,7 +889,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jVt-ii-MnJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="581" y="-770"/>
+            <point key="canvasLocation" x="1182" y="-1142"/>
         </scene>
         <!--Class Table Controller-->
         <scene sceneID="5a7-1i-rgC">
@@ -960,39 +960,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fxd-fg-HLY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1182" y="1019"/>
-        </scene>
-        <!--Video View Controller-->
-        <scene sceneID="Gea-34-zcw">
-            <objects>
-                <viewController id="8Q5-hH-by0" customClass="VideoViewController" customModule="Titch" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="lyr-KW-tDR"/>
-                        <viewControllerLayoutGuide type="bottom" id="9PF-fP-QX8"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="nIG-ND-Vll">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0N-lW-Nef">
-                                <rect key="frame" x="277" y="296" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="xSp-4X-vjY" kind="show" identifier="QuizPop" id="Hzm-wr-m5H">
-                                        <nil key="action"/>
-                                    </segue>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Q0N-lW-Nef" firstAttribute="centerX" secondItem="nIG-ND-Vll" secondAttribute="centerX" id="8sc-0c-f41"/>
-                            <constraint firstItem="9PF-fP-QX8" firstAttribute="top" secondItem="Q0N-lW-Nef" secondAttribute="bottom" constant="274" id="yuu-AB-dQr"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Itp-xf-JoB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2601" y="1019"/>
         </scene>
         <!--Quiz Controller-->
         <scene sceneID="UrF-PD-EsJ">
@@ -1174,15 +1141,103 @@
                     </tableView>
                     <connections>
                         <outlet property="tableV" destination="Ts8-Y9-Lqe" id="GX5-Hq-XJu"/>
-                        <segue destination="8Q5-hH-by0" kind="show" identifier="LessonVideoView" id="Rjm-75-TsM"/>
+                        <segue destination="Ev3-zx-uOl" kind="show" identifier="LessonVideoView" id="CGU-Qw-188"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wuw-hi-FzK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1894" y="1019"/>
         </scene>
+        <!--Cours-->
+        <scene sceneID="LwN-Yv-kcb">
+            <objects>
+                <viewController id="Ev3-zx-uOl" customClass="VideoViewController" customModule="Titch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sMk-cS-d2x"/>
+                        <viewControllerLayoutGuide type="bottom" id="9k8-b5-AHy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oCB-5O-Xg4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyR-1i-vpr" customClass="FlatButton" customModule="Material">
+                                <rect key="frame" x="0.0" y="512" width="600" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="v1w-1Z-FdV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Vidéo du cours">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="x">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                        <color key="value" red="0.099022241339999997" green="0.51125801280000005" blue="0.14480530010000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="play:" destination="Ev3-zx-uOl" eventType="touchUpInside" id="Nui-Nl-yjD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nom du cours" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iN9-uO-1vB">
+                                <rect key="frame" x="156" y="62" width="288" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="ohk-Yn-AQU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description du cours : Bli bla blu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaq-9T-met">
+                                <rect key="frame" x="156" y="187" width="288" height="121"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="121" id="m8N-iz-kwE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wrt-BT-u5j" customClass="FlatButton" customModule="Material">
+                                <rect key="frame" x="0.0" y="550" width="600" height="30"/>
+                                <color key="backgroundColor" red="0.26563304069999999" green="0.36135714889999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="rzY-BO-KJp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Questionnaire">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xSp-4X-vjY" kind="show" identifier="QuizPop" id="X3D-5I-ErA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.49958020450000001" blue="0.49257612229999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gaq-9T-met" firstAttribute="top" secondItem="oCB-5O-Xg4" secondAttribute="top" constant="187" id="5Od-FY-kmf"/>
+                            <constraint firstItem="iN9-uO-1vB" firstAttribute="trailing" secondItem="gaq-9T-met" secondAttribute="trailing" id="Fcn-4j-xNH"/>
+                            <constraint firstItem="gaq-9T-met" firstAttribute="centerX" secondItem="fyR-1i-vpr" secondAttribute="centerX" id="H2O-Ow-IJ7"/>
+                            <constraint firstItem="fyR-1i-vpr" firstAttribute="trailing" secondItem="Wrt-BT-u5j" secondAttribute="trailing" id="HIQ-C7-sCx"/>
+                            <constraint firstAttribute="trailing" secondItem="fyR-1i-vpr" secondAttribute="trailing" id="Pmt-iq-S5Z"/>
+                            <constraint firstItem="fyR-1i-vpr" firstAttribute="leading" secondItem="oCB-5O-Xg4" secondAttribute="leading" id="Ybl-O9-1Ri"/>
+                            <constraint firstItem="Wrt-BT-u5j" firstAttribute="top" secondItem="fyR-1i-vpr" secondAttribute="bottom" constant="8" symbolic="YES" id="mLX-SN-wQw"/>
+                            <constraint firstItem="iN9-uO-1vB" firstAttribute="leading" secondItem="gaq-9T-met" secondAttribute="leading" id="p9F-DZ-yhn"/>
+                            <constraint firstItem="iN9-uO-1vB" firstAttribute="top" secondItem="sMk-cS-d2x" secondAttribute="bottom" constant="42" id="pV5-NC-QWe"/>
+                            <constraint firstItem="fyR-1i-vpr" firstAttribute="leading" secondItem="Wrt-BT-u5j" secondAttribute="leading" id="pjA-YH-cSR"/>
+                            <constraint firstAttribute="bottom" secondItem="Wrt-BT-u5j" secondAttribute="bottom" constant="20" symbolic="YES" id="zb5-hL-OXe"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Cours" image="bookx30" id="Re7-a1-XPl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cGI-8C-a8H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2619" y="1019"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="bookx30" width="1024" height="1024"/>
         <image name="youboox_appicon_1024" width="1024" height="1024"/>
     </resources>
     <inferredMetricsTieBreakers>

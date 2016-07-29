@@ -9,6 +9,8 @@ import UIKit
 import SwiftyJSON
 import Alamofire
 import Toast_Swift
+import AVKit
+import AVFoundation
 
 class VideoViewController: UIViewController {
     
@@ -71,6 +73,15 @@ class VideoViewController: UIViewController {
             }
             print(test.id)
         }
+    }
+    @IBAction func play(sender: AnyObject) {
+        let url = NSURL(string: vidUrl)
+        
+        let player =  AVPlayer(URL: url!)
+        let playerController = AVPlayerViewController()
+        playerController.player = player
+        self.presentViewController(playerController, animated: true, completion: nil)
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
