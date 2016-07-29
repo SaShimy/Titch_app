@@ -3,6 +3,7 @@ PODS:
   - AlamofireImage (2.4.1):
     - Alamofire (~> 3.3)
   - DLRadioButton (1.4.9)
+  - HHJUploadImages (1.0.2)
   - Material (1.42.7)
   - SwiftyJSON (2.3.2)
   - Toast-Swift (1.3.0)
@@ -11,6 +12,7 @@ DEPENDENCIES:
   - Alamofire (~> 3.4)
   - AlamofireImage (~> 2.0)
   - DLRadioButton (~> 1.4)
+  - HHJUploadImages (~> 1.0.0)
   - Material (~> 1.0)
   - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
   - Toast-Swift (~> 1.3.0)
@@ -28,10 +30,11 @@ SPEC CHECKSUMS:
   Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
   AlamofireImage: 3ccf3347d9ea24580dc11fb892770a0be6a29826
   DLRadioButton: 7bb8a6e3768b572469ace553391ab4d2af6f9c19
+  HHJUploadImages: 67a88749b97f2170752b281312dff2367ff79c33
   Material: 2d46a44719b1f19e52956518af8aea54ac714963
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
   Toast-Swift: 25c3d98db42dc70d9a77b5006ee000e0becb458e
 
-PODFILE CHECKSUM: 0543407161e92fac12e64f496f3ac3c999a7b0bc
+PODFILE CHECKSUM: 6fb56d618472adf390bcda41757ceb4c8f5cef0f
 
 COCOAPODS: 1.0.1

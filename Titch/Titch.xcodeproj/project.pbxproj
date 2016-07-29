@@ -286,6 +286,7 @@
 				TargetAttributes = {
 					51C43A651D428C7D0010967C = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = XUP22C8MSC;
 					};
 					51C43A791D428C7D0010967C = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -557,10 +558,13 @@
 			baseConfigurationReference = 8EC3930A210072B1A85233A1 /* Pods-Titch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Titch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.etna.Titch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -569,10 +573,13 @@
 			baseConfigurationReference = D7CB66B6C2509137D98A5B52 /* Pods-Titch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Titch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.etna.Titch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

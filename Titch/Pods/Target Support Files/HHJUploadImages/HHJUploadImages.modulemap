@@ -1,0 +1,6 @@
+framework module HHJUploadImages {
+  umbrella header "HHJUploadImages-umbrella.h"
+
+  export *
+  module * { export * }
+}

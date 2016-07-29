@@ -25,6 +25,9 @@ class HomeController: UIViewController, UIPopoverPresentationControllerDelegate 
     @IBOutlet weak var coursText3: UILabel!
     @IBOutlet weak var coursText2: UILabel!
     @IBOutlet weak var coursText1: UILabel!
+    
+    
+    
     let recognizer = UITapGestureRecognizer()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -104,5 +107,4 @@ class HomeController: UIViewController, UIPopoverPresentationControllerDelegate 
                 }
         }
     }
-
 }

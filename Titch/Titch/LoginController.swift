@@ -14,8 +14,18 @@ import Toast_Swift
 
 var token : String = String()
 
-class LoginController: UIViewController {
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}
 
+class LoginController: UIViewController {
     @IBOutlet weak var Identifiant: TextField!
     @IBOutlet weak var MotDePasse: TextField!
     @IBOutlet weak var BttConnexion: FlatButton!
@@ -48,7 +58,7 @@ class LoginController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.hideKeyboardWhenTappedAround()
         prepareStyle()
         if let myString = global.valueForKey("SignedUpEmail") as? String
         {
