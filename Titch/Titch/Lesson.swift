@@ -14,13 +14,15 @@ class Lesson {
     var title: String
     var desc: String
     var id: String
+    var status: Int
 
     
-    init?(title: String, desc: String, id: String) {
+    init?(title: String, desc: String, id: String, status: Int) {
         // Initialize stored properties.
         self.title = title
         self.desc = desc
         self.id = id
+        self.status = status
         
         // Initialization should fail if there is no name or if the rating is negative.
         if title.isEmpty || desc.isEmpty {

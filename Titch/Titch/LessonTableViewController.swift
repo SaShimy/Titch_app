@@ -22,6 +22,7 @@ class LessonTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableV.reloadData()
         print("name \(name)")
         print("desc \(desc)")
         print("id \(id)")
@@ -39,7 +40,7 @@ class LessonTableViewController: UITableViewController {
                     debugPrint(response.result.value!)
                     let json = JSON(response.result.value!)
                     for (_,subJson) in json["lessons"] {
-                        let lessontmp = Lesson(title: subJson["name"].stringValue, desc: subJson["description"].stringValue, id: subJson["id"].stringValue)!
+                        let lessontmp = Lesson(title: subJson["name"].stringValue, desc: subJson["description"].stringValue, id: subJson["id"].stringValue, status: subJson["status"].intValue)!
                         self.lessons.append(lessontmp)
                     }
                 }
@@ -86,19 +87,33 @@ class LessonTableViewController: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cellIdentifier = "LessonTableViewCell"
         
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! LessonTableViewCell
+        let lesson = lessons[indexPath.row]
+        
+        let cellIdentifier = "LessonTableViewCell"
+        let cellIdentifier2 = "LessonTableViewCell2"
+        
+        if(lesson.status == 1) {
+            let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! LessonTableViewCell
+            cell.Title.text = lesson.title
+            cell.Description.text = lesson.desc
+            
+            return cell
+        }
+        else {
+            let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier2, forIndexPath: indexPath) as! LessonTableViewCell2
+            cell.Title.text = lesson.title
+            cell.Description.text = lesson.desc
+            
+            return cell
+        }
 
         // Fetches the appropriate meal for the data source layout.
         
-        let lesson = lessons[indexPath.row]
+        
         // Configure the cell...
         
-        cell.Title.text = lesson.title
-        cell.Description.text = lesson.desc
-        	
-        return cell
+       
     }
     
 

@@ -27,6 +27,7 @@
 		810463951D47BEC800EC8CB4 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810463941D47BEC800EC8CB4 /* Answer.swift */; };
 		810463971D47C3BB00EC8CB4 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810463961D47C3BB00EC8CB4 /* Question.swift */; };
 		816CD2B91D48C02F0044EF15 /* QuizController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816CD2B81D48C02F0044EF15 /* QuizController.swift */; };
+		81A0022B1D4B5440007433EF /* LessonTableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A0022A1D4B5440007433EF /* LessonTableViewCell2.swift */; };
 		CBD9BD351109112781A4A565 /* Pods_Titch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76D60E31016A46F5F4683F0C /* Pods_Titch.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,7 @@
 		810463941D47BEC800EC8CB4 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		810463961D47C3BB00EC8CB4 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		816CD2B81D48C02F0044EF15 /* QuizController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizController.swift; sourceTree = "<group>"; };
+		81A0022A1D4B5440007433EF /* LessonTableViewCell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonTableViewCell2.swift; sourceTree = "<group>"; };
 		BC9A987E19272AE9CFFDB1BB /* Pods-Titch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Titch.release.xcconfig"; path = "Pods/Target Support Files/Pods-Titch/Pods-Titch.release.xcconfig"; sourceTree = "<group>"; };
 		FC2967296A88249BC41830DE /* Pods-Titch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Titch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Titch/Pods-Titch.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,6 +153,7 @@
 				810463961D47C3BB00EC8CB4 /* Question.swift */,
 				8104638E1D47AF3400EC8CB4 /* Lesson.swift */,
 				8104638F1D47AF3400EC8CB4 /* LessonTableViewCell.swift */,
+				81A0022A1D4B5440007433EF /* LessonTableViewCell2.swift */,
 				8104638C1D47AF0500EC8CB4 /* LTypeTableViewCell.swift */,
 				810463881D47AED800EC8CB4 /* TypeLesson.swift */,
 				51FAB1DA1D3E9AD800635172 /* ViewControllers */,
@@ -392,6 +395,7 @@
 				810463911D47AF3400EC8CB4 /* LessonTableViewCell.swift in Sources */,
 				8104638B1D47AEF300EC8CB4 /* LessonTableViewController.swift in Sources */,
 				518F820D1D3E9D7C002A39C1 /* SignUpController.swift in Sources */,
+				81A0022B1D4B5440007433EF /* LessonTableViewCell2.swift in Sources */,
 				810463891D47AED800EC8CB4 /* TypeLesson.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

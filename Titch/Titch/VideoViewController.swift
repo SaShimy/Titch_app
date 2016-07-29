@@ -37,7 +37,7 @@ class VideoViewController: UIViewController {
             
                     self.vidUrl = json["file"]["path"].stringValue
                     let questions = json["questions"]
-                    
+                    print("questions: \(questions)")
                     for (_,question) in questions {
                         //Do something you want
                         for (_,answers) in question["options"] {
@@ -59,18 +59,6 @@ class VideoViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
-       // tableV.reloadData()
-        print(vidUrl)
-        
-        for test in questionsArray {
-            print(test.text)
-            for a in test.answers {
-                print(a.text)
-                print(a.id)
-                print(a.is_valid)
-            }
-            print(test.id)
-        }
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
