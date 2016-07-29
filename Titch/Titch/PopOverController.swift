@@ -9,13 +9,36 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import Material
 
 class PopOverController: UIViewController {
 
-    @IBOutlet weak var fName: UITextField!
-    @IBOutlet weak var lName: UITextField!
+ 
     @IBOutlet weak var gender: UISegmentedControl!
-    @IBOutlet weak var age: UITextField!
+    @IBOutlet weak var fName: TextField!
+    @IBOutlet weak var lName: TextField!
+    @IBOutlet weak var age: TextField!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        prepareStyle()
+    }
+    
+    private func prepareStyle() {
+        fName.placeholder = "Nom"
+        fName.placeholderColor = MaterialColor.white
+        fName.placeholderActiveColor = MaterialColor.green.base
+        
+        lName.placeholder = "Prénom"
+        lName.placeholderColor = MaterialColor.white
+        lName.placeholderActiveColor = MaterialColor.green.base
+        
+        age.placeholder = "Age"
+        age.placeholderColor = MaterialColor.white
+        age.placeholderActiveColor = MaterialColor.green.base
+    }
+    
+    
     @IBAction func sendProfile(sender: AnyObject) {
         if (fName.text != "" && lName.text != "" && age.text != "") {
             let genderV: String = gender.titleForSegmentAtIndex(gender.selectedSegmentIndex)!
@@ -37,4 +60,9 @@ class PopOverController: UIViewController {
         }
         }
     }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
 }
