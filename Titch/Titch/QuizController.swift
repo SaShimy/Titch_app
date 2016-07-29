@@ -27,13 +27,13 @@ class QuizController: UIViewController {
     @IBOutlet var btn3: DLRadioButton!
     
     @IBOutlet var questionNum: UILabel!
-
+    
     @IBOutlet var question: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         for (index, test) in questionsArray.enumerate() {
-           
+            
             if( index == questionIndex) {
                 questionNum.text = "Question \(index + 1 )/\(questionsArray.count)"
                 question.text = test.text
@@ -60,15 +60,15 @@ class QuizController: UIViewController {
                         btn3.setTitle(answ.text, forState: .Normal)
                     }
                 }
-
+                
             }
         }
-
-      }
+        
+    }
     
     override func viewDidAppear(animated: Bool) {
-        print("indexvalid")
-        print(indexValid)
+        /* print("indexvalid")
+         print(indexValid)*/
     }
     
     override func didReceiveMemoryWarning() {
@@ -154,55 +154,18 @@ class QuizController: UIViewController {
     }
     
     func LessonValidate() {
+        
         let headers = ["Authorization" : "Bearer " + token]
-        var jsonObject: [AnyObject] = []
         
-        for question in questionsArray {
-            let test = question.id
-            var test2 = ""
-            for answer in question.answers {
-                if(answer.is_valid == "true") {
-                    test2 = answer.id
-                }
-            }
-            jsonObject.append(["id": test, "option_id": test2])
-        }
-        
-        let questionJson = JSONStringify(jsonObject)
-        
-        let data = ["id": idLesson, "questions": questionJson]
-        
-            Alamofire.request(.GET, "http://symfonyios.cloudapp.net/api/survey/answer", headers: headers, parameters: data)
+        Alamofire.request(.POST, "http://symfonyios.cloudapp.net/api/survey/answer/\(idLesson)", headers: headers)
             .validate()
             .responseJSON { response in
                 if (response.result.value != nil) {
-                    debugPrint(response.result.value!)
+                    print("validée")
                 }
-                print("ok")
+                
         }
+        
     }
     
-    func JSONStringify(value: AnyObject,prettyPrinted:Bool = false) -> String{
-        
-        let options = prettyPrinted ? NSJSONWritingOptions.PrettyPrinted : NSJSONWritingOptions(rawValue: 0)
-        
-        
-        if NSJSONSerialization.isValidJSONObject(value) {
-            
-            do{
-                let data = try NSJSONSerialization.dataWithJSONObject(value, options: options)
-                if let string = NSString(data: data, encoding: NSUTF8StringEncoding) {
-                    return string as String
-                }
-            }catch {
-                
-                print("error")
-                //Access error here
-            }
-            
-        }
-        return ""
-        
-    }
 }
-
