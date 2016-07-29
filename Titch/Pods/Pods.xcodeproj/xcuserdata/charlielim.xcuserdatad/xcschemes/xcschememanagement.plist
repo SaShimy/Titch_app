@@ -14,6 +14,16 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>DLRadioButton.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
+		<key>HHJUploadImages.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
 		<key>Material-io.cosmicmind.material.fonts.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -72,6 +82,16 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>3B1794ECB09ECED79DB628343654313B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3D3FA797A01800ABD13593F4E7672540</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>5FCF8522CB3AFDF68FCF2A850B4DDD26</key>
 		<dict>
 			<key>primary</key>
@@ -82,7 +102,37 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>B6B56D6B8F93A2E7F9565CA29CA818B6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B921F47BA4CB1FB26873E04C2C180156</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>BA3D38C1A8238D8BE9ACD5B681EA5E62</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D25016360E99D93F979FAD134DE85D4D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DB28543D0FC7DFE229F033ADE3C9692E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EB39372E87993EE92917DF460182421F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F3990E3EAC160D4E4F89177D966FC1E9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

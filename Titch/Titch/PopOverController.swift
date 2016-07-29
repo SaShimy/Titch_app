@@ -18,6 +18,7 @@ class PopOverController: UIViewController {
     @IBOutlet weak var fName: TextField!
     @IBOutlet weak var lName: TextField!
     @IBOutlet weak var age: TextField!
+    @IBOutlet weak var Retour: FlatButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,17 +26,21 @@ class PopOverController: UIViewController {
     }
     
     private func prepareStyle() {
-        fName.placeholder = "Nom"
+        fName.placeholder = "Prenom"
         fName.placeholderColor = MaterialColor.white
         fName.placeholderActiveColor = MaterialColor.green.base
         
-        lName.placeholder = "Prénom"
+        lName.placeholder = "Nom"
         lName.placeholderColor = MaterialColor.white
         lName.placeholderActiveColor = MaterialColor.green.base
         
         age.placeholder = "Age"
         age.placeholderColor = MaterialColor.white
         age.placeholderActiveColor = MaterialColor.green.base
+        
+        let icon: UIImage? = MaterialIcon.cm.arrowBack
+        Retour.setImage(icon, forState: .Normal)
+        Retour.setImage(icon, forState: .Highlighted)
     }
     
     
