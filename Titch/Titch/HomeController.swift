@@ -17,7 +17,6 @@ class HomeController: UIViewController, UIPopoverPresentationControllerDelegate 
     @IBOutlet weak var badgeImg2: UIImageView!
     @IBOutlet weak var profilePicture: UIImageView!
     @IBOutlet weak var badgeImg3: UIImageView!
-    
     @IBOutlet weak var nbBadges: UILabel!
     @IBOutlet weak var classProg: UILabel!
     @IBOutlet weak var classDone: UILabel!
@@ -25,8 +24,9 @@ class HomeController: UIViewController, UIPopoverPresentationControllerDelegate 
     @IBOutlet weak var coursText3: UILabel!
     @IBOutlet weak var coursText2: UILabel!
     @IBOutlet weak var coursText1: UILabel!
-    
-    
+    var NameLesson: String = ""
+    var DescLesson: String = ""
+    var IdLesson: String = ""
     
     let recognizer = UITapGestureRecognizer()
     override func viewDidLoad() {
@@ -43,6 +43,13 @@ class HomeController: UIViewController, UIPopoverPresentationControllerDelegate 
             let popoverViewController = segue.destinationViewController
             popoverViewController.modalPresentationStyle = UIModalPresentationStyle.Popover
             popoverViewController.popoverPresentationController!.delegate = self
+        }
+        if  segue.identifier == "HomeToLesson",
+            let destination = segue.destinationViewController as? LessonTableController
+        {
+            destination.name = self.NameLesson
+            destination.desc = self.DescLesson
+            destination.id = self.IdLesson
         }
     }
     func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {
@@ -106,5 +113,56 @@ class HomeController: UIViewController, UIPopoverPresentationControllerDelegate 
                     self.view.makeToast("Error Call BDD")
                 }
         }
+    }
+    
+    @IBAction func class1(sender: UIButton) {
+        let headers = [
+            "Authorization": "Bearer " + token
+        ]
+        Alamofire.request(.GET, "http://symfonyios.cloudapp.net/api/lesson/type/all", headers: headers)
+            .validate()
+            .responseJSON { response in
+                if (response.result.value != nil) {
+                    let json = JSON(response.result.value!)
+                    self.NameLesson = json[0]["name"].stringValue
+                    self.DescLesson = json[0]["description"].stringValue
+                    self.IdLesson = json[0]["id"].stringValue
+                    self.performSegueWithIdentifier("HomeToLesson", sender: self)
+                }
+        }
+    }
+    
+    @IBAction func class2(sender: UIButton) {
+        let headers = [
+            "Authorization": "Bearer " + token
+        ]
+        Alamofire.request(.GET, "http://symfonyios.cloudapp.net/api/lesson/type/all", headers: headers)
+            .validate()
+            .responseJSON { response in
+                if (response.result.value != nil) {
+                    let json = JSON(response.result.value!)
+                    self.NameLesson = json[1]["name"].stringValue
+                    self.DescLesson = json[1]["description"].stringValue
+                    self.IdLesson = json[1]["id"].stringValue
+                    self.performSegueWithIdentifier("HomeToLesson", sender: self)
+                }
+        }
+    }
+    
+    @IBAction func class3(sender: UIButton) {
+        let headers = [
+            "Authorization": "Bearer " + token
+        ]
+        Alamofire.request(.GET, "http://symfonyios.cloudapp.net/api/lesson/type/all", headers: headers)
+            .validate()
+            .responseJSON { response in
+                if (response.result.value != nil) {
+                    let json = JSON(response.result.value!)
+                    self.NameLesson = json[2]["name"].stringValue
+                    self.DescLesson = json[2]["description"].stringValue
+                    self.IdLesson = json[2]["id"].stringValue
+                    self.performSegueWithIdentifier("HomeToLesson", sender: self)
+                }
+        }        
     }
 }

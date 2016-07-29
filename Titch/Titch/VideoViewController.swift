@@ -14,6 +14,10 @@ import AVFoundation
 
 class VideoViewController: UIViewController {
     
+    @IBOutlet weak var LessonName: UILabel!
+    
+    @IBOutlet weak var LessonDesc: UILabel!
+    
     var id = String()
     var vidUrl = String()
     var questionsArray = [Question]()
@@ -36,7 +40,10 @@ class VideoViewController: UIViewController {
                 if (response.result.value != nil) {
                     debugPrint(response.result.value!)
                     let json = JSON(response.result.value!)
-            
+                    
+                    self.LessonDesc.text = json["description"].stringValue
+                    self.LessonName.text = json["name"].stringValue
+                    
                     self.vidUrl = json["file"]["path"].stringValue
                     let questions = json["questions"]
                     
